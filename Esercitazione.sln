@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MoltiplicazioneDaSomme", "Funzioni\Funzioni.vcxproj", "{9F57970E-00F9-45D1-AE02-F85B0C694DC4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Funzioni", "Funzioni", "{357E4328-B96C-4622-B0A5-2662485F750A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Stampa triangolo", "Stampa triangolo\Stampa triangolo.vcxproj", "{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Controllo compreso (20-50)", "Controllo compreso (20-50)\Controllo compreso (20-50).vcxproj", "{9119C0A9-B827-4C63-8F82-F8D050162817}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Vettori", "Vettori", "{A1E0A230-8AE8-49C5-8C76-23CE27B18F80}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Alfabeto", "Alfabeto\Alfabeto.vcxproj", "{1CDA289A-ACBD-4752-BED8-9513FDCA139A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Debug|x64.ActiveCfg = Debug|x64
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Debug|x64.Build.0 = Debug|x64
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Debug|x86.ActiveCfg = Debug|Win32
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Debug|x86.Build.0 = Debug|Win32
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Release|x64.ActiveCfg = Release|x64
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Release|x64.Build.0 = Release|x64
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Release|x86.ActiveCfg = Release|Win32
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4}.Release|x86.Build.0 = Release|Win32
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Debug|x64.ActiveCfg = Debug|x64
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Debug|x64.Build.0 = Debug|x64
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Debug|x86.ActiveCfg = Debug|Win32
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Debug|x86.Build.0 = Debug|Win32
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Release|x64.ActiveCfg = Release|x64
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Release|x64.Build.0 = Release|x64
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Release|x86.ActiveCfg = Release|Win32
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C}.Release|x86.Build.0 = Release|Win32
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Debug|x64.ActiveCfg = Debug|x64
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Debug|x64.Build.0 = Debug|x64
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Debug|x86.ActiveCfg = Debug|Win32
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Debug|x86.Build.0 = Debug|Win32
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Release|x64.ActiveCfg = Release|x64
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Release|x64.Build.0 = Release|x64
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Release|x86.ActiveCfg = Release|Win32
+		{9119C0A9-B827-4C63-8F82-F8D050162817}.Release|x86.Build.0 = Release|Win32
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Debug|x64.ActiveCfg = Debug|x64
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Debug|x64.Build.0 = Debug|x64
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Debug|x86.ActiveCfg = Debug|Win32
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Debug|x86.Build.0 = Debug|Win32
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Release|x64.ActiveCfg = Release|x64
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Release|x64.Build.0 = Release|x64
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Release|x86.ActiveCfg = Release|Win32
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F57970E-00F9-45D1-AE02-F85B0C694DC4} = {357E4328-B96C-4622-B0A5-2662485F750A}
+		{8CE8A15A-B0C1-4219-9A8D-5F1D7EEC2A4C} = {357E4328-B96C-4622-B0A5-2662485F750A}
+		{9119C0A9-B827-4C63-8F82-F8D050162817} = {357E4328-B96C-4622-B0A5-2662485F750A}
+		{1CDA289A-ACBD-4752-BED8-9513FDCA139A} = {A1E0A230-8AE8-49C5-8C76-23CE27B18F80}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5B25DA8-F9EF-4410-8662-52C20C668BB9}
+	EndGlobalSection
+EndGlobal
