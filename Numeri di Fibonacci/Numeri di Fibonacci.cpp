@@ -1,20 +1,47 @@
 // Numeri di Fibonacci.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-
-#include <iostream>
-
-int main()
+/*
+Scrivere un programma in linguaggio C che calcoli e stampi i primi N numeri della serie di Fibonacci, con N inserito da tastiera.
+La serie di Fibonacci inizia con 1, 1 ed ogni numero successivo è dato dalla somma dei due precedenti: 1, 1, 2, 3, 5, 8, 13, 21 . . .
+*/
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>	
+int main(void)
 {
-    std::cout << "Hello World!\n";
+	int N;	/* numero di termini della serie */
+	int nuovo_termine;	/* nuovo termine della serie */
+	int prec_1, prec_2; /* due termini precedenti nella serie */ int num_termini;	/* contatore per scandire i termini della serie */
+
+	/* LEGGI IL NUMERO TERMINI DELLA SEQUENZA */
+	printf("Inserisci il numero di termini della serie di Fibonacci:");
+	scanf("%d", &N);
+	/* INIZIALIZZA A 1 I PRIMI DUE TERMINI DELLA SERIE */
+	prec_1 = 1; prec_2 = 1;
+	/* INIZIALIZZA A 1 IL PRIMO VALORE DELLA SERIE */
+	nuovo_termine = 1;
+	/* INIZIALIZZA A 0 IL CONTATORE CHE SCANDISCE I TERMINI DELLA SERIE */
+	num_termini = 0;
+	while (num_termini < N)
+	{
+		/* I PRIMI DUE TERMINI DELLA SERIE SONO UGUALI A 1.
+		I TERMINI SUCCESSIVI SONO CALCOLATI COME SOMMA DEI DUE TERMINI PRECEDENTI */
+		if (num_termini >= 2)
+		{
+			/* CALCOLA IL NUOVO TERMINE DELLA SERIE */
+			nuovo_termine = prec_1 + prec_2;
+			/* AGGIORNA IL VALORE DEI DUE TERMINI PRECEDENTI NELLA SERIE */
+			prec_2 = prec_1;
+			prec_1 = nuovo_termine;
+		}
+		/* STAMPA UN NUOVO TERMINE DELLA SERIE */
+		printf("%d", nuovo_termine);
+		/* INCREMENTA IL CONTATORE "num_termini" */
+		num_termini = num_termini + 1;
+	}
+
+	/* RIPORTA A CAPO IL CURSORE AL TERMINE DELLA STAMPA DELLA SERIE */
+	printf("\n");
+	return(0);
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
