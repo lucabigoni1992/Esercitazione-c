@@ -10,8 +10,8 @@ input -> ciaoMondodd+ ->Vocali:5 consonanti:6
 input -> ciao+ ->Vocali:3 consonanti:1
 */
 #define _CRT_SECURE_NO_DEPRECATE
-#include <iostream>
-using namespace std;
+#include <stdio.h>
+
 bool controllavocale(int);
 
 int main()
