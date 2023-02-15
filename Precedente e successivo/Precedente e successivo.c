@@ -1,6 +1,7 @@
 /*PROGRAMMAZIONEINC*/ /*File:precedente_successivo.c*/ /*Soluzionepropostaesercizio"Precedenteesuccessivo"*/ 
-#include<stdio.h> 
-#include<stdlib.h>
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h> 
+#include <stdlib.h>
 int main(void)
 {
 	int a;/*numero inserito*/

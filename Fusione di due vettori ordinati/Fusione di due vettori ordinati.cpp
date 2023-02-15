@@ -1,8 +1,9 @@
 // Fusione di due vettori ordinati.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
-#include <iostream>
-#include <stdio.h> #include <stdlib.h>
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h> 
+#include <stdlib.h>
 int main(void)
 {
 	const int MAXN = 20;	/* dimensione massima del vettore */
@@ -14,7 +15,7 @@ int main(void)
 	/* LEGGI LE DIMENSIONI DEL PRIMO VETTORE */ do
 	{
 		printf("Quanti numeri sarannoinseriti nel primo vettore?"); scanf("%d", &N1);
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */ if (N1 > MAXN || N1 <= 0)
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */ if (N1 > MAXN || N1 <= 0)
 			printf("Errore: il numero deve essere compreso tra 0 e %d\n", MAXN);
 	} while (N1 > MAXN || N1 <= 0);
 	/* LEGGI IL PRIMO VETTORE */
@@ -30,9 +31,10 @@ int main(void)
 	printf("\n");
 	/* LEGGI LE DIMENSIONI DEL SECONDO VETTORE */
 	do {
-		printf("Quanti numeri sarannoinseriti nel secondovettore?"); scanf("%d", &N2);
+		printf("Quanti numeri sarannoinseriti nel secondovettore?");
+		scanf("%d", &N2);
 
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N2 > MAXN || N2 <= 0)
 			printf("Errore: il numero deve essere compreso tra %d e 0\n", MAXN);
 	} while (N2 > MAXN || N2 <= 0);
@@ -57,17 +59,17 @@ int main(void)
 		if (vet1[j] <= vet2[t])
 		{
 			/* GLI ELEMENTI DI "vet1" SONO ACCODATI NEL VETTORE "fusione" */
-				/* SE "vet1[j]" E’ MINORE O UGUALE DI "vet2[t]", ALLORA "vet1[j]"
-			E’ COPIATO IN "fusione[i]" PER PRIMO. VIENE INCREMENTATO "j", MENTRE "i" E’ INCREMENTATO DAL CICLO FOR */
+				/* SE "vet1[j]" E' MINORE O UGUALE DI "vet2[t]", ALLORA "vet1[j]"
+			E' COPIATO IN "fusione[i]" PER PRIMO. VIENE INCREMENTATO "j", MENTRE "i" E' INCREMENTATO DAL CICLO FOR */
 			fusione[i] = vet1[j];
 			j = j + 1;
 
 		}
 		else /* vet1[j] > vet2[t] */ {
 			/* GLI ELEMENTI DI "vet2" SONO ACCODATI NEL VETTORE "fusione" */
-			/* SE "vet1[t]" E’ MAGGIORE DI "vet2[j]", ALLORA "vet2[t]"
-			100	E’ COPIATO IN "fusione[i]" PER PRIMO. VIENE INCREMENTATO "t", MENTRE
-			"i" E’ INCREMENTATO DAL CICLO FOR */ fusione[i] = vet2[t];
+			/* SE "vet1[t]" E' MAGGIORE DI "vet2[j]", ALLORA "vet2[t]"
+			100	E' COPIATO IN "fusione[i]" PER PRIMO. VIENE INCREMENTATO "t", MENTRE
+			"i" E' INCREMENTATO DAL CICLO FOR */ fusione[i] = vet2[t];
 			t = t + 1;
 		}
 

@@ -21,7 +21,7 @@ int main()
     //Il tipo int permette di rappresentare numeri interi. Possiamo dichiarare un int con due varianti: short e long,
     int a;
    // Il tipo char può contenere qualsiasi carattere definito secondo lo standard ASCII, quindi qualsiasi lettera(maiuscola o minuscola), cifra(da 0 a 9) e simbolo previsto dalla codifica.
-    char a='a';
+    char a2='a';
     //I tipi float e double sono i cosiddetti numeri in virgola mobile, che rappresentano l'insieme dei numeri reali
    // La differenza tra i due sta nel numero di bit riservati alla rappresentazione dei numeri, che si va a riflettere sul range di numeri e sul numero di cifre dopo la virgola che possiamo memorizzare.
     double x = 7.0;

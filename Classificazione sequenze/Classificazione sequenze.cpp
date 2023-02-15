@@ -19,7 +19,7 @@ int main(void)
 	numeri della sequenza */
 	int positivi, negativi, nulli; /* contatori numeri postivi, negativi, o nulli */
 	int pari, dispari;	/* contatori numeri pari o dispari */
-	int crescente, decrescente;	/* flag per indicare se la sequenza e’		crescente o decrescente */
+	int crescente, decrescente;	/* flag per indicare se la sequenza e'		crescente o decrescente */
 	/* LEGGI QUANTI NUMERI SARANNO INSERITI */
 	printf("Quanti numeri sarannoinseriti?");
 	scanf("%d", &totale);
@@ -27,14 +27,14 @@ int main(void)
 	/* INIZIALIZZA A ZERO I CONTATORI DI NUMERI POSITIVI, NEGATIVI, NULLI, PARI E DIPARI */
 	positivi = 0; negativi = 0;
 	nulli = 0; pari = 0; dispari = 0;
-	/* INIZIALIZZA I FLAG PER INDICARE SE LA SEQUENZA E’ CRESCENTE O DECRESCENTE 35	-- SE "crescente" E’ UGUALE a 1: SEQUENZA CRESCENTE
-	-- SE "crescente" E’ UGUALE a 0: SEQUENZA NON CRESCENTE
-	-- SE "decrescente" E’ UGUALE a 1: SEQUENZA DECRESCENTE
-	-- SE "decrescente" E’ UGUALE a 0: SEQUENZA NON DECRESCENTE
-	INIZIALIZZA AD 1 ENTRAMBI I FLAG. ALL’INTERNO DEL CICLO WHILE
-	40	ASSEGNA I FLAG A 0 SE VERIFICHI CHE LA SEQUENZA NON E’ CRESCENTE O NON E’ DECRESCENTE */
+	/* INIZIALIZZA I FLAG PER INDICARE SE LA SEQUENZA E' CRESCENTE O DECRESCENTE 35	-- SE "crescente" E' UGUALE a 1: SEQUENZA CRESCENTE
+	-- SE "crescente" E' UGUALE a 0: SEQUENZA NON CRESCENTE
+	-- SE "decrescente" E' UGUALE a 1: SEQUENZA DECRESCENTE
+	-- SE "decrescente" E' UGUALE a 0: SEQUENZA NON DECRESCENTE
+	INIZIALIZZA AD 1 ENTRAMBI I FLAG. ALL'INTERNO DEL CICLO WHILE
+	40	ASSEGNA I FLAG A 0 SE VERIFICHI CHE LA SEQUENZA NON E' CRESCENTE O NON E' DECRESCENTE */
 	crescente = 1; decrescente = 1;
-	/* INIZIALIZZA IL CONTATORE DEI NUMERI GIA’ INSERITI */
+	/* INIZIALIZZA IL CONTATORE DEI NUMERI GIA' INSERITI */
 	N = 0;
 	/* RIPETI IL SEGUENTE CICLO FINO A QUANDO NON SONO STATI INSERITI TUTTI I NUMERI DELLA SEQUENZA */
 	while (N < totale)
@@ -42,42 +42,42 @@ int main(void)
 		/* LEGGI UN NUMERO */ printf("Inserisci il numero %d: ", N + 1);
 		scanf("%d", &numero);
 
-		/* SE IL NUMERO E’ UGUALE A ZERO INCREMENTA IL CONTATORE "nulli" */
+		/* SE IL NUMERO E' UGUALE A ZERO INCREMENTA IL CONTATORE "nulli" */
 		if (numero == 0)
 			nulli = nulli + 1;
 		else
 		{
-			/* IL NUMERO E’ DIVERSO DA ZERO. SE NUMERO E’ POSITIVO
+			/* IL NUMERO E' DIVERSO DA ZERO. SE NUMERO E' POSITIVO
 			INCREMENTA IL CONTATORE "positivi" ALTRIMENTI INCREMENTA IL CONTATORE "negativi" */
 			if (numero > 0)
 				positivi = positivi + 1; else
 				negativi = negativi + 1;
 		}
-		/* SE IL NUMERO E’ PARI INCREMENTA IL CONTATORE "pari"
+		/* SE IL NUMERO E' PARI INCREMENTA IL CONTATORE "pari"
 	ALTRIMENTI INCREMENTA IL CONTATORE "dispari" */
 		if (numero % 2 == 0) pari = pari + 1;
 		else
 			dispari = dispari + 1;
-		/* PER VERIFICARE SE LA SEQUENZA E’ CRESCENTE O DECRESENTE
+		/* PER VERIFICARE SE LA SEQUENZA E' CRESCENTE O DECRESENTE
 		CONFRONTA IL NUMERO CORRENTE CON IL PENULTIMO NUMERO INSERITO.
-		LA VERIFICA PUO’ ESSERE FATTA SOLO QUANDO SONO STATI INSERITI
+		LA VERIFICA PUO' ESSERE FATTA SOLO QUANDO SONO STATI INSERITI
 		80	ALMENO DUE NUMERI DELLA SEQUENZA, OSSIA N>1. INFATTI,
 		N==0 QUANDO VIENE INSERITO IL PRIMO NUMERO E N==1 QUANDO VIENE INSERITO IL SECONDO NUMERO */
 		if (N > 1)
 		{
-			/* SE IL NUMERO CORRENTE E’ MAGGIORE DEL PRECEDENTE LA SEQUENZA NON E’ DECRESCENTE */ if (numero > numero_precedente) decrescente = 0;
+			/* SE IL NUMERO CORRENTE E' MAGGIORE DEL PRECEDENTE LA SEQUENZA NON E' DECRESCENTE */ if (numero > numero_precedente) decrescente = 0;
 			else
 			{
-				/* SE IL NUMERO CORRENTE E’ MINORE DEL PRECEDENTE LA SEQUENZA NON E’ CRESCENTE */ if (numero < numero_precedente)
+				/* SE IL NUMERO CORRENTE E' MINORE DEL PRECEDENTE LA SEQUENZA NON E' CRESCENTE */ if (numero < numero_precedente)
 					crescente = 0;
 				else {
-					/* SE IL NUMERO CORRENTE E’ UGUALE AL PRECEDENTE LA SEQUENZA NON E’ STRETTAMENTE CRESCENTE NE’
+					/* SE IL NUMERO CORRENTE E' UGUALE AL PRECEDENTE LA SEQUENZA NON E' STRETTAMENTE CRESCENTE NE'
 					100	STRETTAMENTE DECRESCENTE */
 					crescente = 0; decrescente = 0;
 				}
 			}
 		}
-		/* IL NUMERO CORRENTE SARA’ IL PENULTIMO NUMERO INSERITO NELLA PROSSIMA ITERAZIONE DEL CICLO */ numero_precedente = numero;
+		/* IL NUMERO CORRENTE SARA' IL PENULTIMO NUMERO INSERITO NELLA PROSSIMA ITERAZIONE DEL CICLO */ numero_precedente = numero;
 
 		/* INCREMENTA IL CONTATORE DEI NUMERI INSERITI */
 		N = N + 1;
@@ -85,12 +85,12 @@ int main(void)
 	/* STAMPA IL RISULTATO */
 	printf("Hai inserito: %d positivi, %d negativi, %d uguali a zero\n", positivi, negativi, nulli);
 	printf("Hai inserito: %d pari, %d dispari\n", pari, dispari);
-	if (crescente == 1) printf("Lasequenza e’ crescente\n");
+	if (crescente == 1) printf("Lasequenza e' crescente\n");
 
 	else
 	{
-		if (decrescente == 1) printf("Lasequenza e’ decrescente\n");
-		else printf("Lasequenza non e’ ne‘ crescente ne‘ decrescente\n");
+		if (decrescente == 1) printf("Lasequenza e' decrescente\n");
+		else printf("Lasequenza non e' ne‘ crescente ne‘ decrescente\n");
 	}
 	return 0;
 }

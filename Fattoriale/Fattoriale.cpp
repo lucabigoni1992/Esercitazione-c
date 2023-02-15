@@ -24,7 +24,7 @@ int main(void)
 	else {
 		/* INIZIALIZZA IL VALORE DEL FATTORIALE */ fattoriale = 1;
 
-		/* IL FATTORIALE E’ CALCOLATO COME PRODOTTO
+		/* IL FATTORIALE E' CALCOLATO COME PRODOTTO
 		TRA TUTTI I NUMERI COMPRESI TRA "N" E 1 */ while (N > 1)
 		{
 			/* AGGIORNA IL VALORE DEL FATTORIALE */
@@ -33,7 +33,7 @@ int main(void)
 			N = N - 1;
 		}
 		/* STAMPA IL RISULTATO */ printf("\n");
-		printf("Ilfattoriale e’ %d\n", fattoriale);
+		printf("Ilfattoriale e' %d\n", fattoriale);
 
 
 	}

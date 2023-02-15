@@ -2,7 +2,7 @@
 //
 
 /*
-Siano dati due vettori di interi inseriti da tastiera. La lunghezza dei due vettori è inserita dall’utente da tastiera. I due vettori possono avere lunghezze diverse, ma possono contenere al massimo 30 numeri. Si scriva un programma in linguaggio C per generare un terzo vettore che contiene l’intersezione tra due vettori. Tale vettore deve contenere i numeri presenti in entrambi i vettori dati.
+Siano dati due vettori di interi inseriti da tastiera. La lunghezza dei due vettori è inserita dall'utente da tastiera. I due vettori possono avere lunghezze diverse, ma possono contenere al massimo 30 numeri. Si scriva un programma in linguaggio C per generare un terzo vettore che contiene l'intersezione tra due vettori. Tale vettore deve contenere i numeri presenti in entrambi i vettori dati.
 Ad esempio, si assuma che siano stati inseriti i due vettori:
 1	6 15 20 25
 2	20 18 6
@@ -26,7 +26,7 @@ int main(void)
 	{
 		printf("Quanti numeri sarannoinseriti nel primo vettore?");
 		scanf("%d", &N1);
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N1 > MAXN || N1 <= 0)
 			printf("Errore: il numero deve essere compreso tra 0 e %d\n", MAXN);
 	} while (N1 > MAXN || N1 <= 0);
@@ -46,7 +46,7 @@ int main(void)
 	do {
 		printf("Quanti numeri sarannoinseriti nel secondovettore?");
 		scanf("%d", &N2);
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N2 > MAXN || N2 <= 0)
 			printf("Errore: il numero deve essere compreso tra 0 e %d\n", MAXN);
 	} while (N2 > MAXN || N2 <= 0);
@@ -70,9 +70,9 @@ int main(void)
 	for (i = 0; i < N1; i++)
 	{
 		/* INIZIALIZZA IL FLAG "trovato". IL FLAG ASSUME I VALORI
-	-- "trovato" E’ UGUALE A 0 SE IL VETTORE "vet2" NON CONTIENE
+	-- "trovato" E' UGUALE A 0 SE IL VETTORE "vet2" NON CONTIENE
 	IL VALORE IN "vet1[i]"
-	-- "trovato" E’ UGUALE A 1 SE IL VETTORE "vet2" CONTIENE IL VALORE IN "vet1[i]" */
+	-- "trovato" E' UGUALE A 1 SE IL VETTORE "vet2" CONTIENE IL VALORE IN "vet1[i]" */
 		trovato = 0;
 		/* PER OGNI ELEMENTO "vet1[i]" DI "vet1", IL CICLO FOR SCANDISCE IL
 		VETTORE "vet2" E VERIFICA SE "vet2" CONTIENE IL VALORE IN "vet1[i]"
@@ -81,7 +81,7 @@ int main(void)
 		{
 			if (vet2[j] == vet1[i])
 			{
-				/* SE "vet2" CONTIENE IL VALORE IN "vet1[i]", QUESTO VALORE E’ INSERITO NEL VETTORE "intersezione" */
+				/* SE "vet2" CONTIENE IL VALORE IN "vet1[i]", QUESTO VALORE E' INSERITO NEL VETTORE "intersezione" */
 				intersezione[N_intersezione] = vet1[i];
 				/* INCREMENTA LA DIMENSIONE DEL VETTORE "intersezione" */
 				N_intersezione = N_intersezione + 1;

@@ -5,7 +5,7 @@
 1.	Si realizzi un programma in linguaggio C che legga un numero intero N e visualizziun quadrato di asterischi di lato N (vedi esempio con N = 5).
 2.	Si realizzi una variante del programma per visualizzare solo i lati del quadrato (vediesempio con N = 5).
 3.	Si realizzi una variante del programma per visualizzare un triangolo isoscele rettangolo di lato N (vedi esempio con N = 5).
-4.	Si realizzi una variante del programma per visualizzare un quadrato di lato N comenell’esempio del caso 4 (con N = 5).
+4.	Si realizzi una variante del programma per visualizzare un quadrato di lato N comenell'esempio del caso 4 (con N = 5).
 	Caso 1	Caso 2	Caso 3	Caso 4
 	*****	*****	*   	*++++
 	*****	*	*	**  	**+++
@@ -28,24 +28,24 @@ int main(void)
 	printf("Inserisci il lato del quadrato:");
 
 	scanf("%d", &lato);
-	/* CONTROLLA SE IL LATO DEL QUADRATO E’ UN NUMERO MAGGIORE DI 0 */ if (lato <= 0)
+	/* CONTROLLA SE IL LATO DEL QUADRATO E' UN NUMERO MAGGIORE DI 0 */ if (lato <= 0)
 		printf("Errore, il lato deve essere maggiore di zero\n");
 	else {
-		/* IL CICLO PIU’ ESTERNO SCANDISCE LA RIGHE DEL QUADRATO */
+		/* IL CICLO PIU' ESTERNO SCANDISCE LA RIGHE DEL QUADRATO */
 		riga = 0;
 		while (riga < lato)
 		{
 
-			/* IL CICLO PIU’ INTERNO SCANDISCE LE COLONNE DEL QUADRATO */
+			/* IL CICLO PIU' INTERNO SCANDISCE LE COLONNE DEL QUADRATO */
 		/*INIZIALIZZA LA VARIABILE PER LA SCANSIONE DELLE COLONNE DEL QUADRATO */
 			colonna = 0;
 			while (colonna < lato)
-			{	/* PER LA PRIMA E L’ULTIMA RIGA STAMPA "*" PER OGNI COLONNA */
+			{	/* PER LA PRIMA E L'ULTIMA RIGA STAMPA "*" PER OGNI COLONNA */
 				if (riga == 0 || riga == (lato - 1))
 					printf("*");
 				else {
 					/* PER LE ALTRE RIGHE STAMPA "*" SOLO PER LA PRIMA
-					E L’ULTIMA COLONNA */
+					E L'ULTIMA COLONNA */
 					if (colonna == 0 || colonna == (lato - 1))
 						printf("*");
 					else

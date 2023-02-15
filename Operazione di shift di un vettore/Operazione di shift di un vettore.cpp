@@ -1,10 +1,10 @@
 // Operazione di shift di un vettore.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-/*Scrivere un programma in linguaggio C che riceve in ingresso una sequenza di N numeri interi. Il valore N è inserito dall’utente. I numeri sono memorizzati in un vettore. Il programma esegue le seguenti operazioni:
+/*Scrivere un programma in linguaggio C che riceve in ingresso una sequenza di N numeri interi. Il valore N è inserito dall'utente. I numeri sono memorizzati in un vettore. Il programma esegue le seguenti operazioni:
 1.	visualizza il vettore
-2.	esegue uno spostamento (shift) a sinistra di una posizione del contenuto del vettore.Pertanto ogni elemento del vettore deve assumere il valore dell’elemento immediatamente successivo all’interno del vettore. L’elemento di indice N-1 deve assumere il valore zero.
+2.	esegue uno spostamento (shift) a sinistra di una posizione del contenuto del vettore.Pertanto ogni elemento del vettore deve assumere il valore dell'elemento immediatamente successivo all'interno del vettore. L'elemento di indice N-1 deve assumere il valore zero.
 Ad esempio dato il vettore: 1 10 15 18 Il programma deve generare il vettore: 10 15 18 0 Il programma visualizza il vettore ottenuto.
-3.	esegue uno spostamento (shift) a destra di una posizione del contenuto del vettoreottenuto nel passo precedente. Pertanto ogni elemento del vettore deve assumere il valore dell’elemento immediatamente precedente all’interno del vettore. L’elemento di indice 0 deve assumere il valore zero.
+3.	esegue uno spostamento (shift) a destra di una posizione del contenuto del vettoreottenuto nel passo precedente. Pertanto ogni elemento del vettore deve assumere il valore dell'elemento immediatamente precedente all'interno del vettore. L'elemento di indice 0 deve assumere il valore zero.
 Ad esempio dato il vettore: 10 15 18 0 Il programma deve generare il vettore: 0 10 15 18 Il programma visualizza il vettore ottenuto.
 Nota. Nella definizione di “destra” e “sinistra” si immagini il vettore stampato orizzontalmente, a partire dalla cella di indice 0.
 */
@@ -21,7 +21,7 @@ int main(void)
 	/* LEGGI LE DIMENSIONI DEL VETTORE */ do {
 		printf("Quanti numeri sarannoinseriti?");
 		scanf("%d", &N);
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N > MAXN || N <= 0)
 			printf("Errore: il numero deve essere compreso tra %d e 0\n", MAXN);
 	} while (N > MAXN || N <= 0);
@@ -33,7 +33,7 @@ int main(void)
 		scanf("%d", &vet[i]);
 	} printf("\n");
 	/* STAMPA IL VETTORE DI INTERI */
-	printf("Lasequenza inserita e’ la seguente\n");
+	printf("Lasequenza inserita e' la seguente\n");
 	for (i = 0; i < N; i++)
 		printf("Elemento %d: %d\n", i + 1, vet[i]);
 	printf("\n");
@@ -47,7 +47,7 @@ int main(void)
 	QUESTO VALORE DEVE INVECE ESSERE ASSEGNATO ALLA CELLA vet[N-2] */
 	vet[N - 1] = 0;
 	/* STAMPA IL VETTORE DI INTERI */
-	printf("Stampa del vettore dopo l’operazione di shift a sinistra\n");
+	printf("Stampa del vettore dopo l'operazione di shift a sinistra\n");
 	for (i = 0; i < N; i++)
 		printf("Elemento %d: %d\n", i + 1, vet[i]);
 	printf("\n");
@@ -59,7 +59,7 @@ int main(void)
 	70	ESSERE FATTA AL TERMINE DEL CICLO FOR. INFATTI SE VENISSE FATTA PRIMA DEL CICLO FOR SI PERDE IL VALORE INIZIALMENTE CONTENUTO NELLA CELLA vet[0]. QUESTO VALORE DEVE INVECE ESSERE ASSEGNATO ALLA CELLA vet[1] */
 	vet[0] = 0;
 	/* STAMPA IL VETTORE DI INTERI */
-	printf("Stampa del vettore dopo l’operazione di shift a destra\n");
+	printf("Stampa del vettore dopo l'operazione di shift a destra\n");
 	for (i = 0; i < N; i++)
 		printf("Elemento %d: %d\n", i + 1, vet[i]);
 	printf("\n");

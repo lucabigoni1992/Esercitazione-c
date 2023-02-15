@@ -6,7 +6,7 @@
 
 int main()
 {
-	//Gli operatori permettono di ottenere un determinato risultato da un’operazione
+	//Gli operatori permettono di ottenere un determinato risultato da un'operazione
    /*
 	Operatore unario, binario, ternario in C
 		Un operatore si dice unario quando ha questa sintassi :

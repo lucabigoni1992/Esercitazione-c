@@ -9,14 +9,14 @@ int main(void)
 	int a; /* numero inserito */
 	/* LEGGI IL NUMERO */ printf("Immetti un numero:");
 	scanf("%d", &a);
-	/* VERIFICA SE IL NUMERO E’ POSITIVO O NEGATIVO */ if (a >= 0)
+	/* VERIFICA SE IL NUMERO E' POSITIVO O NEGATIVO */ if (a >= 0)
 	{
-		/* IL NUMERO E’ POSITIVO O NULLO */
-		printf("Il numero %d e’ positivo\n", a);
+		/* IL NUMERO E' POSITIVO O NULLO */
+		printf("Il numero %d e' positivo\n", a);
 	}
 	else {
-		/* IL NUMERO E’ NEGATIVO */
-		printf("Il numero %d e’ negativo\n", a);
+		/* IL NUMERO E' NEGATIVO */
+		printf("Il numero %d e' negativo\n", a);
 
 	}
 	return(0);

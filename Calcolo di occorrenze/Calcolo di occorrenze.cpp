@@ -1,9 +1,9 @@
 /*
-Scrivere un programma in linguaggio C che legge N numeri interi da tastiera e li memorizza in un vettore. Il numero N viene inserito dall’utente ed è minore di 20. Il programma deve visualizzare, per ogni cifra contenuta nel vettore, il numero di occorrenze.
+Scrivere un programma in linguaggio C che legge N numeri interi da tastiera e li memorizza in un vettore. Il numero N viene inserito dall'utente ed è minore di 20. Il programma deve visualizzare, per ogni cifra contenuta nel vettore, il numero di occorrenze.
 Ad esempio, si supponga N=7 e si consideri la sequenza di numeri 1 6 15 6 2 15 15. Il programma deve visualizzare:
 numero 1 occorrenze 1 numero 6 occorrenze 2 numero 15 occorrenze 3
 numero 2 occorrenze 1
-Suggerimento. Per ogni numero presente nel vettore, il numero di occorrenze deve essere visualizzato una sola volta (ad esempio per i numeri 6 e 15). Utilizzare un vettore di supporto per poter tenere traccia dei numeri nel vettore per cui sono già state calcolate le occorrenze. Gestire questo vettore di supporto in modo analogo al vettore per la compattazione di una sequenza, visto nell’esercizio 5.7 “Compattazione di un vettore”.
+Suggerimento. Per ogni numero presente nel vettore, il numero di occorrenze deve essere visualizzato una sola volta (ad esempio per i numeri 6 e 15). Utilizzare un vettore di supporto per poter tenere traccia dei numeri nel vettore per cui sono già state calcolate le occorrenze. Gestire questo vettore di supporto in modo analogo al vettore per la compattazione di una sequenza, visto nell'esercizio 5.7 “Compattazione di un vettore”.
 
 */
 #define _CRT_SECURE_NO_DEPRECATE
@@ -25,7 +25,7 @@ contiene, senza ripetizione, i valori del vettore "vet" */
 		printf("Quanti numeri saranno inseriti? ");
 		/* Soluzione proposta esercizio "Calcolo di occorrenze" */
 		scanf("%d", &N);
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N > MAXN || N <= 0)
 			printf("Errore: il numero deve essere compreso tra %d e 0\n", MAXN);
 	} while (N > MAXN || N <= 0);
@@ -49,9 +49,9 @@ contiene, senza ripetizione, i valori del vettore "vet" */
 	for (i = 0; i < N; i++)
 	{
 		/* INIZIALIZZA IL FLAG "trovato". IL FLAG ASSUME I VALORI
-	-- "trovato" E’ UGUALE A 0 SE IL VETTORE "compatto" NON CONTIENE
+	-- "trovato" E' UGUALE A 0 SE IL VETTORE "compatto" NON CONTIENE
 	IL VALORE IN "vet[i]"
-	-- "trovato" E’ UGUALE A 1 SE IL VETTORE "compatto" CONTIENE IL VALORE IN "vet[i]" */
+	-- "trovato" E' UGUALE A 1 SE IL VETTORE "compatto" CONTIENE IL VALORE IN "vet[i]" */
 		trovato = 0;
 		/* PER OGNI ELEMENTO vet1[i] DI vet1, IL CICLO FOR SCANDISCE IL VETTORE
 		"compatto" E VERIFICA SE "compatto" CONTIENE IL VALORE IN "vet1[i]"
@@ -66,11 +66,11 @@ contiene, senza ripetizione, i valori del vettore "vet" */
 
 		if (trovato == 0)
 		{
-			/* SE "trovato" E’ UGUALE A 0, COPIA NEL VETTORE "compatto" IL VALORE IN "vet[i]" */
+			/* SE "trovato" E' UGUALE A 0, COPIA NEL VETTORE "compatto" IL VALORE IN "vet[i]" */
 			compatto[N_compatto] = vet[i];
 			N_compatto = N_compatto + 1;
 			/* CALCOLA IL NUMERO DI OCCORRENZE DI "vet[i]" NEL VETTORE "vet". IL CICLO FOR SCANDISCE IL VETTORE "vet" E CONTA QUANTE VOLTE
-				IL VALORE IN "vet[i]" E’ PRESENTE NEL VETTORE "vet" */
+				IL VALORE IN "vet[i]" E' PRESENTE NEL VETTORE "vet" */
 			occorrenze = 0;
 			for (t = 0; t < N; t++)
 			{

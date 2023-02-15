@@ -2,9 +2,9 @@
 //
 /*
 Scrivere un programma in linguaggio C che riceve in ingresso una sequenza di N numeri interi.
-Il valore N è inserito dall’utente.
+Il valore N è inserito dall'utente.
 I numeri sono memorizzati in un vettore.
-Terminato l’inserimento della sequenza di numeri, il programma deve visualizzare una riga di asterischi per ogni numero inserito.
+Terminato l'inserimento della sequenza di numeri, il programma deve visualizzare una riga di asterischi per ogni numero inserito.
 Il numero di asterischi nella riga è pari al valore del numero inserito. Ad esempio, dato il vettore 9 4 6 il programma deve visualizzare:
 
 Elemento 1: 9 *********
@@ -23,7 +23,7 @@ int main(void)
 		printf("Quanti numeri saranno inseriti? ");
 		/* Soluzione proposta esercizio "Stampa istogrammi" */
 		scanf("%d", &N);
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N > MAXN || N <= 0)
 			printf("Errore: il numero deve essere compreso tra %d e 0\n", MAXN);
 	} while (N > MAXN || N <= 0);
@@ -35,7 +35,7 @@ int main(void)
 		scanf("%d", &vet[i]);
 	} printf("\n");
 	/* STAMPA IL VETTORE DI INTERI */
-	printf("Lasequenza inserita e’ la seguente\n");
+	printf("Lasequenza inserita e' la seguente\n");
 	for (i = 0; i < N; i++)
 		printf("Elemento %d: %d\n", i + 1, vet[i]);
 	printf("\n");
@@ -45,7 +45,7 @@ int main(void)
 	{
 		/* STAMPA IL NUMERO IN POSIZIONE "i" NEL VETTORE "vet" (OSSIA vet[i]) */
 		printf("Elemento %d: %d ", i + 1, vet[i]);
-		/* STAMPA L’ISTOGRAMMA PER IL NUMERO "vet[i]", OSSIA STAMPA UN NUMERO DI "*" UGUALE A vet[i] */
+		/* STAMPA L'ISTOGRAMMA PER IL NUMERO "vet[i]", OSSIA STAMPA UN NUMERO DI "*" UGUALE A vet[i] */
 		for (j = 0; j < vet[i]; j++)
 			printf("*");
 		printf("\n");

@@ -13,12 +13,12 @@ int main(void)
 	printf("Indica quanti numeri sarannoinseriti:"); scanf("%d", &N);
 	/* VERIFICA CHE LA SEQUENZA INSERITA CONTENGA ALMENO UN NUMERO*/
 	if (N <= 0)
-		printf("Errore: non sara’ inserito nessun numero \n");
+		printf("Errore: non sara' inserito nessun numero \n");
 	else {
 		/* LEGGI UN NUMERO */
 		printf("Inserisci un numero:");
 		scanf("%d", &numero);
-		/* N VIENE DECREMENTATO POICHE’ E’ STATO INSERITO UN NUMERO */
+		/* N VIENE DECREMENTATO POICHE' E' STATO INSERITO UN NUMERO */
 		N = N - 1;
 
 		/* INIZIALIZZA "max" e "min" CON IL PRIMO NUMERO INSERITO */
@@ -37,7 +37,7 @@ int main(void)
 					min = numero;
 
 			}
-			/* N VIENE DECREMENTATO POICHE’ E’ STATO INSERITO UN NUMERO */
+			/* N VIENE DECREMENTATO POICHE' E' STATO INSERITO UN NUMERO */
 			N = N - 1;
 		}
 

@@ -2,7 +2,7 @@
 //
 /*Si realizzi un programma in linguaggio C per risolvere equazioni di secondo grado.In particolare, data una generica equazione di secondo grado nella forma
 ax2 + bx + c = 0
-dove a, b, c sono coefficienti reali noti e x rappresenta l’incognita, il programma determini le due radici x1 ed x2 dell’equazione data, ove esse esistano.
+dove a, b, c sono coefficienti reali noti e x rappresenta l'incognita, il programma determini le due radici x1 ed x2 dell'equazione data, ove esse esistano.
 Si identifichino tutti i casi particolari(a = 0, ∆ ≤ 0, ...) e si stampino gli opportuni messaggi informativi.
 Soluzione
  */
@@ -15,14 +15,14 @@ Soluzione
 int main(void)
 {
 	float a, b, c; /* coefficienti a, b e c */ float delta;	/* discriminante */
-	float x1, x2; /* valori di x che risolvono l’equazione */
+	float x1, x2; /* valori di x che risolvono l'equazione */
 
 	printf("Risoluzione equazioni di secondo grado\n");
-	/* LEGGI a e b /
+	/* LEGGI a e b */
 	scanf("%f", &a) ;
 	scanf("%f", &b) ;
 	scanf("%f", &c) ;
-	/* Se a==0, allora in realtà è un’equazione di primo grado */
+	/* Se a==0, allora in realtà è un'equazione di primo grado */
 
 	if (a == 0)
 	{
@@ -48,9 +48,9 @@ int main(void)
 			}
 		}
 	}
-	else /* a != 0, quindi è una ’vera’ equazione di secondo grado */
+	else /* a != 0, quindi è una 'vera' equazione di secondo grado */
 	{
-		/* Calcoliamo il discriminante ’delta’ */ delta = b * b - 4 * a * c;
+		/* Calcoliamo il discriminante 'delta' */ delta = b * b - 4 * a * c;
 		// printf("Il discriminante vale: %f\n", delta) ;
 		if (delta < 0)
 		{

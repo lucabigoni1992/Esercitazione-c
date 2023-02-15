@@ -6,7 +6,7 @@
 int main()
 {
     /*
-Una costante rappresenta un’area della memoria RAM nella quale è memorizzato un preciso valore che non può viene modificato durante l’esecuzione del programma. (ad esempio: PiGreco=3,14)
+Una costante rappresenta un'area della memoria RAM nella quale è memorizzato un preciso valore che non può viene modificato durante l'esecuzione del programma. (ad esempio: PiGreco=3,14)
 Il C prevede quattro tipi di costanti:
 
 intere
@@ -27,7 +27,7 @@ const int base = 6;// (costante intera)
 const char saluto[5] = "ciao"; //(costante stringa, in questo caso può contenere al massimo 4 caratteri)
 
 #define PiGreco 3.14
-#define C ’x’
+#define C 'x'
 #define base 6
 #define saluto ciao
 }

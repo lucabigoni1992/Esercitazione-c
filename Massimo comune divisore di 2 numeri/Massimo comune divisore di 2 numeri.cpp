@@ -12,7 +12,7 @@ In particolare, si supponga che sia N1 minore di N2. Il MCD è il massimo tra i n
 #include <stdlib.h>
 int main(void)
 {
-	int numero1, numero2; /* numeri inseriti */ int minimo; /* valore minimo tra numero1 e numero2 */ int divisore; /* divisore del numero. E’ un contatore per
+	int numero1, numero2; /* numeri inseriti */ int minimo; /* valore minimo tra numero1 e numero2 */ int divisore; /* divisore del numero. E' un contatore per
 scandire tutti i valori tra 1 e "minimo" */
 	int mcd;	/* massimo comun divisore */
 	/* LEGGI I DUE NUMERI */ printf("Inserisci il primo numero: "); scanf("%d", &numero1);
@@ -28,22 +28,22 @@ scandire tutti i valori tra 1 e "minimo" */
 		else minimo = numero2;
 		/* PER CALCOLARE IL MASSIMO COMUN DIVISORE CONSIDERA
 	TUTTI I NUMERI COMPRESI TRA 1 E "minimo". IL MASSIMO COMUN DIVISORE
-	E’ IL MASSIMO TRA I VALORI COMPRESI TRA 1 e "minimo" CHE E’ DIVISORE SIA DI "numero1" CHE DI "numero2" */ divisore = 1;
+	E' IL MASSIMO TRA I VALORI COMPRESI TRA 1 e "minimo" CHE E' DIVISORE SIA DI "numero1" CHE DI "numero2" */ divisore = 1;
 	mcd = 1;
 	while (divisore <= minimo) {
 		/* VERIFICA SE IL NUMERO RAPPRESENTATO IN "divisore"
-		45	E’ DIVISORE, CON RESTO UGUALE A 0, SIA DI "numero1" CHE
+		45	E' DIVISORE, CON RESTO UGUALE A 0, SIA DI "numero1" CHE
 			if ( numero1%divisore == 0 && numero2%divisore == 0 )
-			{	/* POICHE’ IL RESTO E’ UGUALE A 0, IL VALORE DI "divisore"
-		50		E’ UN POSSIBILE MASSIMO COMUN DIVISORE. AGGIORNA IL VALORE DEL MASSIMO COMUM DIVISORE */
-		mcd = divisore; printf("%d e’ divisore \n", mcd);
+			{	/* POICHE' IL RESTO E' UGUALE A 0, IL VALORE DI "divisore"
+		50		E' UN POSSIBILE MASSIMO COMUN DIVISORE. AGGIORNA IL VALORE DEL MASSIMO COMUM DIVISORE */
+		mcd = divisore; printf("%d e' divisore \n", mcd);
 	}
 	/* INCREMENTA IL VALORE DI "divisore" */
 	divisore = divisore + 1;
 	}
 	/* STAMPA IL RISULTATO */
 	printf("\n");
-	printf("Ilmassimo comun divisore per i numeri %d e %d e’ %d\n", numero1, numero2, mcd);
+	printf("Ilmassimo comun divisore per i numeri %d e %d e' %d\n", numero1, numero2, mcd);
 	return(0);
 }
 

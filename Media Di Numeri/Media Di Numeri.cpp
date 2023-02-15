@@ -2,7 +2,7 @@
 //
 /*
 Si scriva un programma in linguaggio C per calcolare la media aritmetica di una serie di numeri inseriti da tastiera.
-L’introduzione di un valore particolare pari a “0” indica il termine del caricamento dei dati.
+L'introduzione di un valore particolare pari a “0” indica il termine del caricamento dei dati.
 */
 #define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>
@@ -16,9 +16,9 @@ int main(void)
 	/* INIZIALIZZA LE VARIABILI */
 	somma = 0; conta = 0;
 	/* LEGGI UN NUMERO */ 
-	printf("Inserire una serie di numeri. La condizione di terminazione e’ il numero zero.\n");
+	printf("Inserire una serie di numeri. La condizione di terminazione e' il numero zero.\n");
 	printf("Inserisci numero: "); scanf("%d", &numero);
-	/* LEGGI UNA SERIE DI NUMERI, FINO A QUANDO NON E’ INSERITO IL NUMERO 0 */
+	/* LEGGI UNA SERIE DI NUMERI, FINO A QUANDO NON E' INSERITO IL NUMERO 0 */
 	while (numero != 0)
 	{
 		/* AGGIORNA LA SOMMA DEI NUMERI INSERITI */

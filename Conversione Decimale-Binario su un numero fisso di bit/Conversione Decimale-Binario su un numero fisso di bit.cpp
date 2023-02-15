@@ -2,9 +2,9 @@
 //
 /*
 Scrivere un programma in linguaggio C che converta un numero decimale D in un numero binario rappresentato su N bit.
-L’utente inserisce un numero decimale intero positivo D e il numero N di bit su cui il numero decimale deve essere rappresentata.
+L'utente inserisce un numero decimale intero positivo D e il numero N di bit su cui il numero decimale deve essere rappresentata.
 Il programma visualizzerà i bit che compongono il numero binario partendo dal bit meno significativo.
-Il programma segnalerà un errore se il numero N di bit inserito dall’utente non è sufficiente per rappresentare il numero decimale.
+Il programma segnalerà un errore se il numero N di bit inserito dall'utente non è sufficiente per rappresentare il numero decimale.
 Suggerimento. Per effettuare la conversione usare il metodo delle divisioni successive. Ad esempio, per convertire il numero decimale D=19 su N=7 bit, si avrà:
 Numero	    | Resto	    |Cifra binaria |Peso
 19	        |1(19%2)   |   1          | 0
@@ -14,7 +14,7 @@ Numero	    | Resto	    |Cifra binaria |Peso
 1 (2/2)	    |1 (1%2) 	|   1	       | 4
 0 (1/2)	    |0 (0%2) 	|   0	       | 5
 0 (0/2)	    |0 (0%2) 	|   0	       | 6
-Nota: nell’applicazione del metodo delle divisioni successive, l’iterazione termina quando è stato assegnato un valore a ciascuno degli N bit.
+Nota: nell'applicazione del metodo delle divisioni successive, l'iterazione termina quando è stato assegnato un valore a ciascuno degli N bit.
 
 */
 #define _CRT_SECURE_NO_DEPRECATE
@@ -35,7 +35,7 @@ int main(void)
 	scanf("%d", &N);
 	/* VERIFICA CHE IL NUMERO DI BIT SIA SUFFICIENTE PER RAPPRESENTARE IL NUMERO DECIMALE */
 	if (pow(BASE, N) - 1 < numero_decimale)
-		printf("Errore: il numero di bit e’ insufficiente\n");
+		printf("Errore: il numero di bit e' insufficiente\n");
 	else {
 		/* INIZIALIZZA "num_bits" A 0 */ num_bits = 0;
 

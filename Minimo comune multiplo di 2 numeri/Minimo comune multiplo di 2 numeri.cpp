@@ -9,7 +9,7 @@ Il MCM è il primo multiplo di N1 che è divisibile (con resto uguale a zero) per 
 #include <stdlib.h>
 int main(void)
 {
-	int numero1, numero2; /* numeri inseriti */ int massimo, minimo; /* valore massimo e minimo tra numero1 e numero2 */ int conta;	/* contatore per generare i multipli di "massimo" */ int fine;	/* flag per indicare che e’ stato trovato
+	int numero1, numero2; /* numeri inseriti */ int massimo, minimo; /* valore massimo e minimo tra numero1 e numero2 */ int conta;	/* contatore per generare i multipli di "massimo" */ int fine;	/* flag per indicare che e' stato trovato
 	15	il minimo comune multiplo */
 	int mcm;	/* valore del minimo comune multiplo */
 	/* LEGGI I DUE NUMERI */
@@ -35,12 +35,12 @@ int main(void)
 		fine = 0;
 		while (fine == 0)
 		{
-			/* CALCOLA IL SUCCESSIVO MULTIPLO DI "massimo". QUESTO VALORE E’ UN CANDIDATO MINIMO COMUNE MULTIPLO */ mcm = conta * massimo;
+			/* CALCOLA IL SUCCESSIVO MULTIPLO DI "massimo". QUESTO VALORE E' UN CANDIDATO MINIMO COMUNE MULTIPLO */ mcm = conta * massimo;
 
-			/* VERIFICA SE "minimo" E’ DIVISORE DI "mcm" */
+			/* VERIFICA SE "minimo" E' DIVISORE DI "mcm" */
 			if (mcm % minimo == 0)
 			{
-				/* LA RICERCA E’ TERMINATA. AGGIORNA IL FLAG "fine" */
+				/* LA RICERCA E' TERMINATA. AGGIORNA IL FLAG "fine" */
 				fine = 1;
 			}
 			else {
@@ -50,7 +50,7 @@ int main(void)
 		}
 		/* STAMPA IL RISULTATO */
 		printf("\n");
-		printf("Il MCM per %d e %d e’ %d\n", numero1, numero2, mcm);
+		printf("Il MCM per %d e %d e' %d\n", numero1, numero2, mcm);
 	}
 	return(0);
 }

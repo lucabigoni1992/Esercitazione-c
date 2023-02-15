@@ -16,18 +16,18 @@ int main(void)
 	scanf("%d", &a);
 	printf("Immetti il secondo numero: ");
 	scanf("%d", &b);
-	/* VERIFICA SE a E’ MAGGIORE DI b */ if (a > b)
+	/* VERIFICA SE a E' MAGGIORE DI b */ if (a > b)
 	{
-		printf("Il primo numero %d e’ maggiore del secondo numero %d\n", a, b);
-		printf("Il valore massimo e’ %d\n", a);
+		printf("Il primo numero %d e' maggiore del secondo numero %d\n", a, b);
+		printf("Il valore massimo e' %d\n", a);
 	}
 	else {
 		/* CASO a <= b */
-		/* VERIFICA SE b E’ MAGGIORE DI a */
+		/* VERIFICA SE b E' MAGGIORE DI a */
 		if (a < b)
 		{
-			printf("Il secondo numero %d e’ maggiore del primo numero %d\n", b, a);
-			printf("Il valore massimo e’ %d\n", b);
+			printf("Il secondo numero %d e' maggiore del primo numero %d\n", b, a);
+			printf("Il valore massimo e' %d\n", b);
 
 		}
 		else

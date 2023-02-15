@@ -2,9 +2,9 @@
 /* File: aree.c */
 /* Soluzione proposta esercizio "Calcolo di aree"
 
-1.	l’area del quadrato di lato D
-2.	l’area del cerchio di diametro D
-3.	l’area del triangolo equilatero di lato D
+1.	l'area del quadrato di lato D
+2.	l'area del cerchio di diametro D
+3.	l'area del triangolo equilatero di lato D
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,22 +20,24 @@ int main(void)
 	float r;	/* raggio del cerchio */
 	float rad3_4;	/* costante pari a radice(3)/4 */
 	rad3_4 = sqrt(3) / 4;
-	/* STAMPA COSA ESEGUIRA’ IL PROGRAMMA */
+	/* STAMPA COSA ESEGUIRA' IL PROGRAMMA */
 	printf("Calcolo di aree\n\n");
-	/* LEGGI IL NUMERO / printf("Immetti il valore di D: ") ; 25	scanf("%f", &d) ;
-	/* CALCOLA L’AREA DEL QUADRATO DI LATO D */
+	/* LEGGI IL NUMERO */
+	printf("Immetti il valore di D: ") ; 	
+	scanf("%f", &d) ;
+	/* CALCOLA L'AREA DEL QUADRATO DI LATO D */
 	aq = d * d;
-	/* soluzione alternativa per il calcolo dell’area del quadrato utilizzando la funzione pow(base, esponente) definita in math.h aq = pow(d, 2) ;
+	/* soluzione alternativa per il calcolo dell'area del quadrato utilizzando la funzione pow(base, esponente) definita in math.h aq = pow(d, 2) ;
 */
-/* CALCOLA L’AREA DEL CERCHIO DI DIAMETRO D */
+/* CALCOLA L'AREA DEL CERCHIO DI DIAMETRO D */
 	/* calcola il raggio del cerchio */ r = d / 2;
-	/* calcola l’area del cerchio */
+	/* calcola l'area del cerchio */
 	ac = M_PI * (r * r);
-	/* nota: il valore di PI greco e’ definito in math.h come M_PI */
-	/* soluzione alternativa per il calcolo dell’area del cerchio ac = M_PI * pow(r, 2) ;
+	/* nota: il valore di PI greco e' definito in math.h come M_PI */
+	/* soluzione alternativa per il calcolo dell'area del cerchio ac = M_PI * pow(r, 2) ;
 		*/
-	/* CALCOLA L’AREA DEL TRIANGOLO EQUILATERO DI LATO D */ at = rad3_4 * (d * d);
-	/* soluzione alternativa per il calcolo dell’area del triangolo equilatero at = rad3_4 * pow( d, 2 ) ;
+	/* CALCOLA L'AREA DEL TRIANGOLO EQUILATERO DI LATO D */ at = rad3_4 * (d * d);
+	/* soluzione alternativa per il calcolo dell'area del triangolo equilatero at = rad3_4 * pow( d, 2 ) ;
 */
 /* STAMPA IL RISULTATO */
 	printf("\n");

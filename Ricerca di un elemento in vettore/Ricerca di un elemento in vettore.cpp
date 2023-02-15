@@ -1,8 +1,8 @@
 // Ricerca di un elemento in vettore.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 /*Scrivere un programma in linguaggio C che riceve in ingresso una sequenza di N numeri interi.
-I numeri sono memorizzati in un vettore. Il valore N è inserito dall’utente, ma  il vettore può contenere al massimo 30 numeri.
-Terminato l’inserimento della sequenza di numeri, l’utente inserisce un valore di riferimento.
+I numeri sono memorizzati in un vettore. Il valore N è inserito dall'utente, ma  il vettore può contenere al massimo 30 numeri.
+Terminato l'inserimento della sequenza di numeri, l'utente inserisce un valore di riferimento.
 Il programma deve indicare se tale valore di riferimento è contenuto nel vettore.*/
 
 
@@ -23,7 +23,7 @@ int main(void)
 		/* Soluzione proposta esercizio "Ricerca di un elemento in un vettore" */
 		scanf("%d", &N);
 
-		/* LA DIMENSIONE MASSIMA DEL VETTORE E’ COMPRESA TRA 1 E MAXN */
+		/* LA DIMENSIONE MASSIMA DEL VETTORE E' COMPRESA TRA 1 E MAXN */
 		if (N > MAXN || N <= 0)
 			printf("Errore: il numero deve essere compreso tra %d e 0\n", MAXN);
 
@@ -38,7 +38,7 @@ int main(void)
 	}
 	printf("\n");
 	/* STAMPA IL VETTORE DI INTERI */
-	printf("Lasequenza inserita e’ la seguente\n");
+	printf("Lasequenza inserita e' la seguente\n");
 	for (i = 0; i < N; i++)
 		printf("Elemento %d: %d\n", i + 1, vet[i]);
 	printf("\n");
@@ -46,7 +46,7 @@ int main(void)
 	scanf("%d", &numero);
 	/* VERIFICA SE LA SEQUENZA DI NUMERI CONTIENE IL NUMERO INSERITO */
 	/* INIZIALIZZA IL FLAG "trovato". IL FLAG ASSUME I VALORI
-	55	-- "trovato" E’ UGUALE A 0 SE IL VETTORE "vet" NON CONTIENE IL VALORE "numero" -- "trovato" E’ UGUALE A 1 SE IL VETTORE "vet" CONTIENE IL VALORE "numero" */
+	55	-- "trovato" E' UGUALE A 0 SE IL VETTORE "vet" NON CONTIENE IL VALORE "numero" -- "trovato" E' UGUALE A 1 SE IL VETTORE "vet" CONTIENE IL VALORE "numero" */
 	trovato = 0;
 	/* IL CICLO FOR SCANDISCE IL VETTORE "vet" E VERIFICA SE CONTIENE 60	IL VALORE "numero".
 	LA RICERCA TERMINA QUANDO SI TROVA UNA CELLA "vet[i]"
@@ -59,8 +59,8 @@ int main(void)
 	}
 	/* STAMPA IL RISULTATO */
 	if (trovato == 0)
-		printf("Il numero %d non e’ contenuto nella sequenza inserita\n", numero);
+		printf("Il numero %d non e' contenuto nella sequenza inserita\n", numero);
 	else
-		printf("Il numero %d e’ contenuto nella sequenza inserita\n", numero);
+		printf("Il numero %d e' contenuto nella sequenza inserita\n", numero);
 	return(0);
 }

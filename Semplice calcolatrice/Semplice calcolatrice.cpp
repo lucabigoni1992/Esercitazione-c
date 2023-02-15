@@ -21,7 +21,7 @@ int main(void)
 	scanf("%d", &b);
 	/* LA CONDIZIONE DI ERRORE VIENE INIZIALIZZATA */
 	err = 0;
-	/* ESEGUI L’OPERAZIONE RICHIESTA */ switch (op)
+	/* ESEGUI L'OPERAZIONE RICHIESTA */ switch (op)
 	{
 	case 1:
 		c = a + b;
@@ -45,7 +45,7 @@ int main(void)
 	default:
 		printf("Operazioneerrata\n"); err = 1;
 	}
-	/* SE NON SI E’ VERIFICATA NESSUNA CONDIZIONE DI ERRORE,
+	/* SE NON SI E' VERIFICATA NESSUNA CONDIZIONE DI ERRORE,
 STAMPA IL RISULTATO */ if (err == 0)
 printf("Ilrisultato vale: %d\n", c);
 
