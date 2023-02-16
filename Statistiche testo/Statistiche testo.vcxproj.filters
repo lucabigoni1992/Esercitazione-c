@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Controlo Minuscolo Maiuscolo.c">
+    <ClCompile Include="Statistiche testo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

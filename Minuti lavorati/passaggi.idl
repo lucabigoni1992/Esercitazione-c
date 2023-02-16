@@ -1,0 +1,9 @@
+namespace Minutilavorati
+{
+    [default_interface]
+    runtimeclass passaggi : Windows.UI.Xaml.Controls.Page
+    {
+        passaggi();
+        Int32 MyProperty;
+    }
+}

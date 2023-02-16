@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f534df4-f58c-432c-be63-054c76cef8b6}</ProjectGuid>
-    <RootNamespace>ControloMinuscoloMaiuscolo</RootNamespace>
+    <ProjectGuid>{8ea807f6-9ac5-4b1b-9163-a458ccd32aaf}</ProjectGuid>
+    <RootNamespace>Concorsodiintelligenza</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controlo Minuscolo Maiuscolo.c" />
+    <ClCompile Include="Concorso di intelligenza.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

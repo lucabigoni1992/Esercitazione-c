@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Controlo Minuscolo Maiuscolo.c">
+    <ClCompile Include="Rubrica telefonica.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

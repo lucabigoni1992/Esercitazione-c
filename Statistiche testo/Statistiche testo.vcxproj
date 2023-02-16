@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f534df4-f58c-432c-be63-054c76cef8b6}</ProjectGuid>
-    <RootNamespace>ControloMinuscoloMaiuscolo</RootNamespace>
+    <ProjectGuid>{66e7ebf1-45fe-49c6-b707-4d31e4195e58}</ProjectGuid>
+    <RootNamespace>Statistichetesto</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controlo Minuscolo Maiuscolo.c" />
+    <ClCompile Include="Statistiche testo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

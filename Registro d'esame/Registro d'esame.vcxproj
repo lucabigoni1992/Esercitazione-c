@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f534df4-f58c-432c-be63-054c76cef8b6}</ProjectGuid>
-    <RootNamespace>ControloMinuscoloMaiuscolo</RootNamespace>
+    <ProjectGuid>{3a714d4d-780f-434e-af2b-2c9c116e27cb}</ProjectGuid>
+    <RootNamespace>Registrodesame</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Cartoline</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controlo Minuscolo Maiuscolo.c" />
+    <ClCompile Include="Cartoline.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="car.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

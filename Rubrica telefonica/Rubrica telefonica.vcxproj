@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f534df4-f58c-432c-be63-054c76cef8b6}</ProjectGuid>
-    <RootNamespace>ControloMinuscoloMaiuscolo</RootNamespace>
+    <ProjectGuid>{1f6f2af1-f02e-4561-aa80-c7a1f5b30c49}</ProjectGuid>
+    <RootNamespace>Rubricatelefonica</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Controlo Minuscolo Maiuscolo.c" />
+    <ClCompile Include="Rubrica telefonica.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
