@@ -27,7 +27,7 @@ const int base = 6;// (costante intera)
 const char saluto[5] = "ciao"; //(costante stringa, in questo caso può contenere al massimo 4 caratteri)
 
 #define PiGreco 3.14
-#define C 'x'
+#define NomePunto 'x'
 #define base 6
 #define saluto ciao
 }

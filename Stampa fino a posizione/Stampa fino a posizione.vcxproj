@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{a8327a24-1515-402e-b2a1-2440606c5543}</ProjectGuid>
-    <RootNamespace>Mediadiduenumeri</RootNamespace>
+    <ProjectGuid>{9921c588-7884-4661-931f-2544b77823cd}</ProjectGuid>
+    <RootNamespace>Stampafinoaposizione</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Media di due numeriINP OUT</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Media di due numeri.cpp" />
+    <ClCompile Include="Stampa fino a posizione.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

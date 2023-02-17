@@ -1,5 +1,21 @@
 /* Soluzione proposta esercizio "Media tra due numeri" */
+/*
+Specificatore di formato
+Espressione
+%c	char – carattere singolo
+%d (%i)int – intero decimale con segno
+%e (%E)float o double – formato esponenziale
+%f float o double – reale con segno
+%g (%G)float o double – %f o %e in base alle esigenze
+%o	int – valore in base 8 senza segno
+%p	pointer – valore di una variabile puntatore
+%s	array di char – stringa di caratteri
+%u	int – intero senza segno
+%x (%X)
+int – valore in base 16 senza segno
 
+
+*/
 #define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
 int main(void)

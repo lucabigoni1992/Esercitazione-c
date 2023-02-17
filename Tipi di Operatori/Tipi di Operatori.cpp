@@ -29,8 +29,8 @@ int main()
 	*/
 	int addendo1 = 3, addendo2 = 4;
 	int somma = addendo1 + addendo2;
-	addendo1++;//incremento di 1
-	addendo1--;//decremento di uno
+	addendo1++;//incremento di 1 addendo1=addendo1+1
+	addendo1--;//decremento di uno addendo1=addendo1-1
 	int risAumento = addendo1++; //Quindi, prima si assegna il valore di x a y e poi si incrementa la x.
 	int risAumento2 = ++addendo1;// Prima si incrementa il valore di x e poi si assenga ad y.
 
