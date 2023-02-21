@@ -18,7 +18,7 @@ int – valore in base 16 senza segno
 #define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
 
-main() {
+void main() {
 	int intero;
 	float virgola;
 	char c;

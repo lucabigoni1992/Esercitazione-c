@@ -7,9 +7,11 @@
 int main(void)
 {
 	int a; /* numero inserito */
-	/* LEGGI IL NUMERO */ printf("Immetti un numero:");
+	/* LEGGI IL NUMERO */ 
+	printf("Immetti un numero:");
 	scanf("%d", &a);
-	/* VERIFICA SE IL NUMERO E' POSITIVO O NEGATIVO */ if (a >= 0)
+	/* VERIFICA SE IL NUMERO E' POSITIVO O NEGATIVO */ 
+	if (a >= 0)
 	{
 		/* IL NUMERO E' POSITIVO O NULLO */
 		printf("Il numero %d e' positivo\n", a);

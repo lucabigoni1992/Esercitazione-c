@@ -10,7 +10,7 @@ Il programma deve fornire all’utente un menù di scelta, con le seguenti voci:
 0) Esci dal programma
 Una volta che l’utente ha scelto l’operazione desiderata (1-4), il programma acquisirà i dati necessari dall’utente ed eseguirà il comando. Nota: nella rubrica non possono esistere due voci con lo stesso nome.
 
-*/
+*/#define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -81,7 +81,7 @@ int main(void)
 				printf("Nessun %s e’ presente in rubrica\n", sn);
 			}
 			break;
-		case 3: /* ricerca approssimata */ printf("Inserisci una parte del nome da ricercare:"); gets(sn);
+		case 3: /* ricerca approssimata */ printf("Inserisci una parte del nome da ricercare:"); gets_s(sn);
 
 			trovato = 0;
 			for (i = 0; i < N; i++)

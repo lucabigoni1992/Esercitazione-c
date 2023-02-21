@@ -16,9 +16,11 @@ int main(void)
 /* LEGGI A e B */
 	printf("Immetti A: ");
 scanf("%d", &a);
-printf("Immetti B: "); scanf("%d", &b);
+printf("Immetti B: "); 
+scanf("%d", &b);
 
-/* CONTROLLA IL SEGNO DI B E STAMPA IL MESSAGGIO OPPORTUNO */ if (b >= 0)
+/* CONTROLLA IL SEGNO DI B E STAMPA IL MESSAGGIO OPPORTUNO */ 
+if (b >= 0)
 {
 	printf("B e' positivo\n");	
 }

@@ -24,6 +24,7 @@
     <ProjectGuid>{a45a8d91-4665-48c0-a4d1-8f026a400f0d}</ProjectGuid>
     <RootNamespace>Calcolodelloppostodiunnumerobinarioincomplementoa2suNbit</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Opposto di un numero binario in complemento a 2 su N bit</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2f897e81-5303-48fc-8101-f4820448e575}</ProjectGuid>
-    <RootNamespace>Semplicecalcolatrice</RootNamespace>
+    <ProjectGuid>{620cd92a-7231-48e0-bce3-a64190532a10}</ProjectGuid>
+    <RootNamespace>EserciziobaseIF</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Switch Case Semplice calcolatrice</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Semplice calcolatrice.cpp" />
+    <ClCompile Include="Esercizio base IF.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

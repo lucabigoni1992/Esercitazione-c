@@ -1,8 +1,10 @@
 ﻿// Equazione di secondo grado.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
-/*Si realizzi un programma in linguaggio C per risolvere equazioni di secondo grado.In particolare, data una generica equazione di secondo grado nella forma
+/*Si realizzi un programma in linguaggio C per risolvere equazioni di secondo grado.In particolare,
+data una generica equazione di secondo grado nella forma
 ax2 + bx + c = 0
-dove a, b, c sono coefficienti reali noti e x rappresenta l'incognita, il programma determini le due radici x1 ed x2 dell'equazione data, ove esse esistano.
+dove a, b, c sono coefficienti reali noti e x rappresenta l'incognita,
+il programma determini le due radici x1 ed x2 dell'equazione data, ove esse esistano.
 Si identifichino tutti i casi particolari(a = 0, ∆ ≤ 0, ...) e si stampino gli opportuni messaggi informativi.
 Soluzione
  */
@@ -14,7 +16,8 @@ Soluzione
 #include <math.h>
 int main(void)
 {
-	float a, b, c; /* coefficienti a, b e c */ float delta;	/* discriminante */
+	float a, b, c; /* coefficienti a, b e c */
+	float delta;	/* discriminante */
 	float x1, x2; /* valori di x che risolvono l'equazione */
 
 	printf("Risoluzione equazioni di secondo grado\n");
@@ -31,26 +34,25 @@ int main(void)
 		if (b != 0)
 		{
 			x1 = -c / b;
-			printf("Unasoluzione: x = %f\n", x1);
-
+			printf("Una soluzione: x = %f\n", x1);
 		}
 		else
 		{
-			/* CASO b==0 */ if (b == 0)
+			/* CASO b==0 */ 
+			if (b == 0)
 			{
-				printf("Equazioneindeterminata(ammetteinfinitesoluzioni)\n");
+				printf("Equazione indeterminata(ammette infinitesoluzioni)\n");
 
 			}
 			else {
-				printf("Equazioneimpossibile (non ammettesoluzioni)\n");
-
-
+				printf("Equazione impossibile (non ammettesoluzioni)\n");
 			}
 		}
 	}
 	else /* a != 0, quindi è una 'vera' equazione di secondo grado */
 	{
-		/* Calcoliamo il discriminante 'delta' */ delta = b * b - 4 * a * c;
+		/* Calcoliamo il discriminante 'delta' */ 
+		delta = b * b - 4 * a * c;
 		// printf("Il discriminante vale: %f\n", delta) ;
 		if (delta < 0)
 		{
@@ -59,16 +61,15 @@ int main(void)
 		else if (delta == 0)
 		{
 			x1 = -b / (2 * a);
-			printf("Unasoluzionedoppia: x = %f\n", x1);
+			printf("Una soluzione doppia: x = %f\n", x1);
 
 		}
 		else /* delta > 0 */
 		{
 			/* caso normale */
-			x1 = (-b - sqrt(delta)) / (2 * a); x2 = (-b + sqrt(delta)) / (2 * a);
+			x1 = (-b - sqrt(delta)) / (2 * a);
+			x2 = (-b + sqrt(delta)) / (2 * a);
 			printf("Duesoluzioni: x = %f e x = %f\n", x1, x2);
-
-
 		}
 	}
 	return(0);

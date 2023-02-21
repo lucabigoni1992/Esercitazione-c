@@ -41,6 +41,8 @@ int main(void)
 	media = ( a + b ) / 2 ;
 	*/
 
-	/* STAMPA IL RISULTATO */ printf("\n"); printf("La media aritmetica di %d e %d e' %f\n", a, b, media);
+	/* STAMPA IL RISULTATO */ 
+	printf("\n");
+	printf("La media aritmetica di %d e %d e' %f\n", a, b, media);
 	return(0);
 }

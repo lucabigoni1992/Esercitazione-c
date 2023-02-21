@@ -61,7 +61,7 @@ tree mergetree(int el, int occ, tree t1, tree t2) { // Mergetree unisce due albe
     t0->T_r = t2;
     t0->value = el;
     t0->Occorrenza = occ;
-    return (t0);
+    return t0;
 }
 
 tree createleaf(int el, int occ) {
@@ -101,8 +101,7 @@ tree insert(int el, tree t) { // Si inserisce un intero el, nell'albero t
     }
     if (root(t) > el) { // Altrimenti si procede da direttive, ovvero se il
         // valore della radice è >= dell'elemento
-        return mergetree(root(t), rootOcc(t), insert(el, leftchild(t)),
-            rightchild(t)); // Andrà a sinistra
+        return mergetree(root(t), rootOcc(t), insert(el, leftchild(t)), rightchild(t)); // Andrà a sinistra
     }
 
     if (root(t) < el) { // Ae la radice è invece minore dell'elemento, verrà

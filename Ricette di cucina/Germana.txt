@@ -1,0 +1,3 @@
+padellino uovo 1
+frittata olio 0.3
+padellino olio 0.2

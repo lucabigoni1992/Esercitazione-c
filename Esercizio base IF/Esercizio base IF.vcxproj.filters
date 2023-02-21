@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calcolo dell’opposto di un numero binario in complemento a 2 su N bit.cpp">
+    <ClCompile Include="Esercizio base IF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

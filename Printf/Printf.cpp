@@ -26,13 +26,13 @@ int main()
 	int num1 = 0, num2 = 1;
 	/* STAMPA COSA ESEGUIRA' IL PROGRAMMA */
 	printf("num1 vale: '%d' ", num1);
-	printf(" num2 vale: '%d' ", num2);
+	printf("num2 vale: '%d' ", num2);
 	printf("\nnum1 vale %d num2 vale %d", num1, num2);
 	printf("\nIl colore del maglione e': %s ", "verde");
 	printf("\nNumero decimale: %d, ottale: %o, esadecimale: %x", 15, 15, 15);
 	printf("\nCarattere singolo: %c", 'A');
 	printf("\nValore : %f", 3154444.1132134);
-	printf("\nValore : %5.2f", 3154444.1132134);
+	printf("\nValore : %5.2f", 444.1132134);
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

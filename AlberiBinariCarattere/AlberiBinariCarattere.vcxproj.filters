@@ -15,8 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Calcolo dell’opposto di un numero binario in complemento a 2 su N bit.cpp">
+    <ClCompile Include="AlberiBinariCarattere.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt" />
   </ItemGroup>
 </Project>

@@ -3,4 +3,7 @@
   <ItemGroup>
     <None Include="..\..\..\..\Esercizi-C-v1_01.docx" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\..\..\Downloads\Esercizi if %284%29.txt" />
+  </ItemGroup>
 </Project>

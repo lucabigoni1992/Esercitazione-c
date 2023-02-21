@@ -3,25 +3,28 @@
 #include <stdlib.h>
 int main(void)
 {
-	int op; /* operazione richiesta */ int a, b, c; /* numeri inseriti ( a e b ) e risultato operazione ( c ) */ int err; /* condizione di errore */
-	/* STAMPA LE POSSIBILI OPERAZIONI SVOLTE DALLA CALCOLATRICE */ 
+	int op; /* operazione richiesta */
+	int a, b, c; /* numeri inseriti ( a e b ) e risultato operazione ( c ) */
+	int err; /* condizione di errore */
+	/* STAMPA LE POSSIBILI OPERAZIONI SVOLTE DALLA CALCOLATRICE */
 	printf("Semplice calcolatrice\n\n");
-	printf("Inserisci 1 per la somma\n"); 
+	printf("Inserisci 1 per la somma\n");
 	printf("Inserisci 2 per la sottrazione\n");
-	printf("Inserisci 3 per la moltiplicazione\n"); 
+	printf("Inserisci 3 per la moltiplicazione\n");
 	printf("Inserisci 4 per la divisione\n");
-	/* LEGGI QUALE OPERAZIONE DEVE ESSERE SVOLTA */ 
-	printf("La tua scelta:"); 
+	/* LEGGI QUALE OPERAZIONE DEVE ESSERE SVOLTA */
+	printf("La tua scelta:");
 	scanf("%d", &op);
 	/* LEGGI I NUMERI INSERITI */
-	printf("Immetti il primo operando: "); 
+	printf("Immetti il primo operando: ");
 	scanf("%d", &a);
 
 	printf("Immetti il secondo operando: ");
 	scanf("%d", &b);
 	/* LA CONDIZIONE DI ERRORE VIENE INIZIALIZZATA */
 	err = 0;
-	/* ESEGUI L'OPERAZIONE RICHIESTA */ switch (op)
+	/* ESEGUI L'OPERAZIONE RICHIESTA */
+	switch (op)
 	{
 	case 1:
 		c = a + b;
@@ -31,7 +34,7 @@ int main(void)
 		break;
 	case 3:
 		c = a * b;
-		break;
+		break;//break serve a terminare
 	case 4:
 		if (b == 0)
 		{
@@ -43,11 +46,15 @@ int main(void)
 			c = a / b;
 		} break;
 	default:
-		printf("Operazioneerrata\n"); err = 1;
+		printf("Operazione errata\n");
+		err = 1;
 	}
 	/* SE NON SI E' VERIFICATA NESSUNA CONDIZIONE DI ERRORE,
-STAMPA IL RISULTATO */ if (err == 0)
-printf("Ilrisultato vale: %d\n", c);
+STAMPA IL RISULTATO */
+	if (err == 0)
+		printf("Il risultato vale: %d\n", c);
+	else
+		printf("trovato errore\n");
 
-return(0);
+	return(0);
 }

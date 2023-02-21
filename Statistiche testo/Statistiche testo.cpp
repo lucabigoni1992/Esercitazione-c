@@ -6,7 +6,9 @@ Al termine dell’acquisizione del testo, il programma dovrà stampare le seguenti 
 3.	il numero totale di caratteri alfanumerici inseriti;
 4.	il numero totale di parole inserite.
 
-*/#include <stdio.h>
+*/
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
