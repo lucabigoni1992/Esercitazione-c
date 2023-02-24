@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Da 2 numeri prendere il massimo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Controlla A e B e fai controlli\Controlla A e B e fai controlli.cpp">
+    <ClCompile Include="FOR da 1 a N che di volta in volta ricerca il valore minimo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Da 2 numeri prendere il massimo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Controlla A e B e fai controlli\Controlla A e B e fai controlli.cpp">
+    <ClCompile Include="Numeri da 5 a 100, a step di 5 do-while.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

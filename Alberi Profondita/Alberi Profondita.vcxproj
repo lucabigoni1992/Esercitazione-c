@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f57970e-00f9-45d1-ae02-f85b0c694dc4}</ProjectGuid>
-    <RootNamespace>Funzioni</RootNamespace>
+    <ProjectGuid>{1b5958de-91ae-4c28-9aea-80502063f74a}</ProjectGuid>
+    <RootNamespace>AlberiProfondita</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>MoltiplicazioneDaSomme</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Funzioni.cpp" />
+    <ClCompile Include="Alberi Profondita.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="nodi.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

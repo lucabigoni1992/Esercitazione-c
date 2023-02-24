@@ -17,7 +17,8 @@ int main(void)
 	int primo;	/* flag per indicare se il numero inserito e' primo */
 
 	/* LEGGI UN NUMERO */ printf("Inserisci un numero intero positivo:"); scanf("%d", &numero);
-	/* CONTROLLA SE IL NUMERO E' POSITIVO */ if (numero <= 0) printf("Errore: hai inserito un numero nullo o negativo\n");
+	/* CONTROLLA SE IL NUMERO E' POSITIVO */
+	if (numero <= 0) printf("Errore: hai inserito un numero nullo o negativo\n");
 	else {
 		/* PER CALCOLARE I DIVISORI CONSIDERA TUTTI I NUMERI COMPRESI TRA 1 E "numero" */
 		divisore = 1;

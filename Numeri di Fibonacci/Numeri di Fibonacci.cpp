@@ -11,8 +11,9 @@ La serie di Fibonacci inizia con 1, 1 ed ogni numero successivo è dato dalla som
 int main(void)
 {
 	int N;	/* numero di termini della serie */
-	int nuovo_termine;	/* nuovo termine della serie */
-	int prec_1, prec_2; /* due termini precedenti nella serie */ int num_termini;	/* contatore per scandire i termini della serie */
+	int ValoreStampato;	/* nuovo termine della serie */
+	int prec_1, prec_2; /* due termini precedenti nella serie */ 
+	int numStampati;	/* contatore per scandire i termini della serie */
 
 	/* LEGGI IL NUMERO TERMINI DELLA SEQUENZA */
 	printf("Inserisci il numero di termini della serie di Fibonacci:");
@@ -20,25 +21,25 @@ int main(void)
 	/* INIZIALIZZA A 1 I PRIMI DUE TERMINI DELLA SERIE */
 	prec_1 = 1; prec_2 = 1;
 	/* INIZIALIZZA A 1 IL PRIMO VALORE DELLA SERIE */
-	nuovo_termine = 1;
+	ValoreStampato = 1;
 	/* INIZIALIZZA A 0 IL CONTATORE CHE SCANDISCE I TERMINI DELLA SERIE */
-	num_termini = 0;
-	while (num_termini < N)
+	numStampati = 0;
+	while (numStampati < N)
 	{
 		/* I PRIMI DUE TERMINI DELLA SERIE SONO UGUALI A 1.
 		I TERMINI SUCCESSIVI SONO CALCOLATI COME SOMMA DEI DUE TERMINI PRECEDENTI */
-		if (num_termini >= 2)
+		if (numStampati >= 2)
 		{
 			/* CALCOLA IL NUOVO TERMINE DELLA SERIE */
-			nuovo_termine = prec_1 + prec_2;
+			ValoreStampato = prec_1 + prec_2;
 			/* AGGIORNA IL VALORE DEI DUE TERMINI PRECEDENTI NELLA SERIE */
 			prec_2 = prec_1;
-			prec_1 = nuovo_termine;
+			prec_1 = ValoreStampato;
 		}
 		/* STAMPA UN NUOVO TERMINE DELLA SERIE */
-		printf("%d", nuovo_termine);
+		printf("%d", ValoreStampato);
 		/* INCREMENTA IL CONTATORE "num_termini" */
-		num_termini = num_termini + 1;
+		numStampati = numStampati + 1;
 	}
 
 	/* RIPORTA A CAPO IL CURSORE AL TERMINE DELLA STAMPA DELLA SERIE */

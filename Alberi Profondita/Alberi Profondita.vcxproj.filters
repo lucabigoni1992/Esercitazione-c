@@ -15,11 +15,11 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Da 2 numeri prendere il massimo.cpp">
+    <ClCompile Include="Alberi Profondita.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\Controlla A e B e fai controlli\Controlla A e B e fai controlli.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="nodi.txt" />
   </ItemGroup>
 </Project>

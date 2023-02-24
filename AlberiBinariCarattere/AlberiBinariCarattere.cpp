@@ -3,7 +3,7 @@
 di quel testo all'interno du un albero binario di ricerca,
 calcolare la frequenza delle lettere(la frequenza indica qunte volte una lettera è presente all'interno dell'albero
 
-restiuiamo i 5 caratteri più frequenti all'interno di una lista
+restiuiamo i 5 caratteri più frequenti all'interno di un vettore
 */
 #define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>

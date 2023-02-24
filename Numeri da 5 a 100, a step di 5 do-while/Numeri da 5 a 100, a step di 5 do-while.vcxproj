@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9f57970e-00f9-45d1-ae02-f85b0c694dc4}</ProjectGuid>
-    <RootNamespace>Funzioni</RootNamespace>
+    <ProjectGuid>{b09bf174-df17-4a66-90ec-f58f79cdf716}</ProjectGuid>
+    <RootNamespace>Numerida5a100astepdi5dowhile</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>MoltiplicazioneDaSomme</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Funzioni.cpp" />
+    <ClCompile Include="Numeri da 5 a 100, a step di 5 do-while.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

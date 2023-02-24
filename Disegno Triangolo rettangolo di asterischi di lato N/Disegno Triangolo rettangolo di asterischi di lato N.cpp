@@ -21,13 +21,16 @@ int main(void)
 	int lato; /* lato del triangolo */
 	int riga, colonna; /* riga e colonna del triangolo */
 	/* LEGGI IL LATO DEL TRIANGOLO */
-	printf("Inserisci il lato del triangolo:"); scanf("%d", &lato);
-	/* CONTROLLA SE IL LATO DEL TRIANGOLO E' UN NUMERO MAGGIORE DI 0 */ if (lato <= 0)
+	printf("Inserisci il lato del triangolo:"); 
+	scanf("%d", &lato);
+	/* CONTROLLA SE IL LATO DEL TRIANGOLO E' UN NUMERO MAGGIORE DI 0 */ 
+	if (lato <= 0)
 		printf("Errore, il lato deve essere maggiore di zero\n");
 	else {
 		/* IL CICLO PIU' ESTERNO SCANDISCE LA RIGHE DEL TRIANGOLO */
 			/* INIZIALIZZA LA VARIABILE PER LA SCANSIONE DELLE RIGHE DEL
-		TRIANGOLO */ riga = 0;
+		TRIANGOLO */
+		riga = 0;
 		while (riga < lato)
 		{
 			/* IL CICLO PIU' INTERNO SCANDISCE LE COLONNE DEL TRIANGOLO */
@@ -35,16 +38,18 @@ int main(void)
 			/*INIZIALIZZA LA VARIABILE PER LA SCANSIONE DELLE COLONNE DEL
 			35	TRIANGOLO */
 			colonna = 0;
-			while (colonna <= riga)
+			while (colonna < riga)
 			{
 				/* STAMPA "*" senza andare a capo */
 				printf("*");
-				/* INCREMENTA "colonna" PER PASSARE ALLA COLONNA SUCCESSIVA */ colonna = colonna + 1;
-
+				/* INCREMENTA "colonna" PER PASSARE ALLA COLONNA SUCCESSIVA */ 
+				colonna = colonna + 1;
 			}
-			/* TERMINATA LA STAMPA DI UNA RIGA SI DEVE RIPORTARE IL CURSORE AL MARGINE SINISTRO DELLO SCHERMO */ printf("\n");
+			/* TERMINATA LA STAMPA DI UNA RIGA SI DEVE RIPORTARE IL CURSORE AL MARGINE SINISTRO DELLO SCHERMO */
+			printf("\n");
 
-			/* INCREMENTA "riga" PER PASSARE ALLA RIGA SUCCESSIVA */ riga = riga + 1;
+			/* INCREMENTA "riga" PER PASSARE ALLA RIGA SUCCESSIVA */ 
+			riga = riga + 1;
 		}
 	}
 	return(0);

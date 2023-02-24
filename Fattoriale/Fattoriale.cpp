@@ -25,7 +25,8 @@ int main(void)
 		/* INIZIALIZZA IL VALORE DEL FATTORIALE */ fattoriale = 1;
 
 		/* IL FATTORIALE E' CALCOLATO COME PRODOTTO
-		TRA TUTTI I NUMERI COMPRESI TRA "N" E 1 */ while (N > 1)
+		TRA TUTTI I NUMERI COMPRESI TRA "N" E 1 */
+		while (N > 1)
 		{
 			/* AGGIORNA IL VALORE DEL FATTORIALE */
 			fattoriale = fattoriale * N;

@@ -10,7 +10,8 @@ int main(void)
 	int N;	/* quanti numeri saranno inseriti */
 	int max, min;	/* valore massimo e minimo tra i numeri inseriti */
 	/* LEGGI QUANTI NUMERI SARANNO INSERITI */
-	printf("Indica quanti numeri sarannoinseriti:"); scanf("%d", &N);
+	printf("Indica quanti numeri saranno inseriti:"); 
+	scanf("%d", &N);
 	/* VERIFICA CHE LA SEQUENZA INSERITA CONTENGA ALMENO UN NUMERO*/
 	if (N <= 0)
 		printf("Errore: non sara' inserito nessun numero \n");

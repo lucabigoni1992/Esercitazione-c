@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Da 2 numeri prendere il massimo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Controlla A e B e fai controlli\Controlla A e B e fai controlli.cpp">
+    <ClCompile Include="leggere  N  (0 N 400)   visualizzare pos somma.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

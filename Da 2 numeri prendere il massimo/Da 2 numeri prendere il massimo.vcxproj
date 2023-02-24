@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\Controlla A e B e fai controlli\Controlla A e B e fai controlli.cpp" />
     <ClCompile Include="Da 2 numeri prendere il massimo.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
