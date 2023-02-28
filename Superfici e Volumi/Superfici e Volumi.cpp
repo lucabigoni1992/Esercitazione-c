@@ -1,22 +1,22 @@
 /*
 Si desidera sviluppare un programma in linguaggio C per il calcolo delle superfici e dei volumi di un edificio.
-Il programma riceve sulla riga di comando due parametri: il primo è il nome del file che contiene le dimensioni dell’edificio mentre il secondo è il numero di piani di cui è composto l’edificio.
-La struttura dell’edificio è descritta in un file di testo così organizzato. 
-Per ogni piano è presente una prima riga contenente due valori interi: il numero di stanze presenti nel piano e l’altezza del piano
+Il programma riceve sulla riga di comando due parametri: il primo è il nome del file che contiene le dimensioni dell'edificio mentre il secondo è il numero di piani di cui è composto l'edificio.
+La struttura dell'edificio è descritta in un file di testo così organizzato. 
+Per ogni piano è presente una prima riga contenente due valori interi: il numero di stanze presenti nel piano e l'altezza del piano
 . Tale riga è seguita da tante righe quante sono le stanze, ognuna contenente due valori che rappresentano le dimensioni della stanza.
 Tutte le stanze sono di forma rettangolare, tutte le dimensioni sono espresse in centimetri e sono date come numeri interi positivi.
-Il programma deve calcolare e presentare sull’unità di output standard: • la superficie totale di tutte le stanze dell’edificio, espressa in metri quadri
-• il volume totale di tutte le stanze dell’edificio, espresso in metri cubi.
+Il programma deve calcolare e presentare sull'unità di output standard: • la superficie totale di tutte le stanze dell'edificio, espressa in metri quadri
+• il volume totale di tutte le stanze dell'edificio, espresso in metri cubi.
 Ad esempio, se il programma – supposto chiamarsi dimef – venisse attivato con la seguente riga di comando: dimef CASA.TXT 2
-(ovvero l’edificio è composto da due piani e le relative dimensioni si trovano nel file CASA.TXT) ed il file CASA.TXT contenesse i seguenti dati:
+(ovvero l'edificio è composto da due piani e le relative dimensioni si trovano nel file CASA.TXT) ed il file CASA.TXT contenesse i seguenti dati:
 2 300
 200 200
 200 400
 1 200
 200 300
-(ovvero il primo piano è alto 300 cm e consiste di due stanze rispettivamente di 200 cm × 200 cm e 200 cm × 400 cm, mentre il secondo piano è alto 200 cm e consiste di un’unica stanza di 200 cm × 300 cm) allora il programma dovrebbe produrre il seguente output:
-Superficie totale dell’edificio: 18.00 metri quadri
-Volume totale dell’edificio: 48.00 metri cubi
+(ovvero il primo piano è alto 300 cm e consiste di due stanze rispettivamente di 200 cm × 200 cm e 200 cm × 400 cm, mentre il secondo piano è alto 200 cm e consiste di un'unica stanza di 200 cm × 300 cm) allora il programma dovrebbe produrre il seguente output:
+Superficie totale dell'edificio: 18.00 metri quadri
+Volume totale dell'edificio: 48.00 metri cubi
 
 */
 
@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
 		/* leggere nStanze e altezza hPiano */
 		if (fgets(riga, MAX, f) == NULL)
 		{
-			printf("ERRORE: il file e’ finito troppo presto\n");
+			printf("ERRORE: il file e' finito troppo presto\n");
 			return(1);
 		} 
 		if (sscanf(riga, "%d%d", &nStanze, &hPiano) != 2)
@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
 			/* leggi le misure */
 			if (fgets(riga, MAX, f) == NULL)
 			{
-				printf("ERRORE: il file e’ finito troppo presto\n");
+				printf("ERRORE: il file e' finito troppo presto\n");
 				return(1);
 			}
 			else
@@ -94,7 +94,7 @@ int main(int argc, char* argv[])
 	}
 
 	fclose(f);
-	printf("Superficie totale dell’edificio: %.2f metri quadri\n", areaTot);
-	printf("Volume totale dell’edificio: %.2f metri cubi\n", volTot);
+	printf("Superficie totale dell'edificio: %.2f metri quadri\n", areaTot);
+	printf("Volume totale dell'edificio: %.2f metri cubi\n", volTot);
 	return(0);
 }

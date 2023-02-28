@@ -2,13 +2,13 @@
 Si desidera calcolare e stampare il valor medio dei voti riportati dagli studenti in esami universitari. I voti sono riportati in un file di testo il cui nome è fornito come primo parametro sulla linea di comando.
 Il file contiene una riga per ogni esame registrato. Ogni riga contiene in sequenza:
 •	il numero di matricola dello studente (al massimo 6 cifre)
-•	il codice dell’esame, composto da 4 cifre di cui quella più significativa indica l’anno di corso dell’esame (1 per il primo anno, 2 per il secondo anno, . . . )
-•	la data dell’esame, composta da 8 cifre secondo il formato AAAAMMGG (es. il 23 gennaio 2007 sarebbe indicato come 20070123)
+•	il codice dell'esame, composto da 4 cifre di cui quella più significativa indica l'anno di corso dell'esame (1 per il primo anno, 2 per il secondo anno, . . . )
+•	la data dell'esame, composta da 8 cifre secondo il formato AAAAMMGG (es. il 23 gennaio 2007 sarebbe indicato come 20070123)
 •	il voto ottenuto (al massimo 2 cifre).
 Non è noto a priori il numero di righe presenti nel file. La media deve essere stampata con una sola cifra dopo la virgola. Si noti che il file contiene la registrazione anche delle insufficienze (ossia voti < 18) ma tali voti non devono essere considerati nel calcolo della media.
-Il programma riceve inoltre come ulteriori parametri sulla linea di comando delle indicazioni circa l’insieme di voti da considerare nel calcolo della media, secondo la seguente codifica:
-•	-aN media dei voti degli esami dell’anno N-esimo; • -sM media dei voti dello studente con matricola M;
-•	-eC media dei voti dell’esame con codice C.
+Il programma riceve inoltre come ulteriori parametri sulla linea di comando delle indicazioni circa l'insieme di voti da considerare nel calcolo della media, secondo la seguente codifica:
+•	-aN media dei voti degli esami dell'anno N-esimo; • -sM media dei voti dello studente con matricola M;
+•	-eC media dei voti dell'esame con codice C.
 Si può assumere che sia presente sempre solo uno di questi tre parametri. Ad esempio se il file VOTI.TXT contenesse i seguenti dati:
 1234 1001 20050123 30
 98765 1001 20050123 18
@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
 	/* controlla gli argomenti */
 	/* argv[1] -> nome del file */
 		/* argv[2] -> comando
-	argv[2][0] == ’-’ argv[2][1] == ’a’ oppure ’s’ oppure ’e’ argv[2][dal 2 in poi] -> numero intero */
+	argv[2][0] == '-' argv[2][1] == 'a' oppure 's' oppure 'e' argv[2][dal 2 in poi] -> numero intero */
 	if (argc != 3)
 	{
 		printf("ERRORE: numero di argomentierrato\n"); exit(1);

@@ -1,10 +1,10 @@
-/*Un’azienda deve tenere traccia dei beni presenti in un magazzino. L’utente inserisce da tastiera dei “comandi” nel seguente formato:
+/*Un'azienda deve tenere traccia dei beni presenti in un magazzino. L'utente inserisce da tastiera dei “comandi” nel seguente formato:
 bene EU quantità
 dove:
 •	bene è il nome di un bene;
-•	EU è la lettera ’E’ per entrata, ’U’ per uscita;
+•	EU è la lettera 'E' per entrata, 'U' per uscita;
 •	quantità è la quantità di bene entrata o uscita.
-L’utente termina il caricamento inserendo un comando pari a FINE. In tal caso il programma deve stampare le quantità di beni presenti a magazzino.
+L'utente termina il caricamento inserendo un comando pari a FINE. In tal caso il programma deve stampare le quantità di beni presenti a magazzino.
 Esempio:
 viti E 10 dadi E 50 viti U 5 viti E 3
 FINE
@@ -27,9 +27,9 @@ int main(void)
 	N = 0;
 
 	do {
-		/* acquisisci un comando dall’utente */
+		/* acquisisci un comando dall'utente */
 			/* NOTA: non si può usare il costrutto scanf("%s %c %d", prod, &dir, &qta) ;
-		in quanto non funziona per l’ultima riga (FINE) */
+		in quanto non funziona per l'ultima riga (FINE) */
 		printf("Comando:");
 
 		scanf("%s", prod);

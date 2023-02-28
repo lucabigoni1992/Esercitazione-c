@@ -49,7 +49,7 @@ int main()
 
 int compreso(int min, int max, int n)
 {
-    if (min<n && max>n)//CASO OK
+    if (n>min && n<max)//CASO OK
         return 1;
     else//caso ko
         return 0;

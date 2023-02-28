@@ -4,7 +4,7 @@ Il programma riceve in un file di testo (il cui nome è specificato come primo pa
 temperatura luogo dove:
 •	temperatura è un numero in formato floating-point che esprime la temperatura rilevata;
 •	luogo è il nome del luogo ove la temperatura è stata rilevata (stringa di caratteri priva di spazi composta al massimo da 31 caratteri).
-Eventuali righe con formato errato devono essere scartate segnalando l’errore (es. riga n. X errata - ignorata).
+Eventuali righe con formato errato devono essere scartate segnalando l'errore (es. riga n. X errata - ignorata).
 Il programma riceve come secondo parametro sulla riga di comando il nome di una località per la quale deve calcolare il valore medio della temperatura.
 Infine se è presente un terzo parametro sulla riga di comando (opzionale) allora esso indica una soglia di temperatura per la quale si chiede che il programma indichi il numero di giorni in cui tale soglia è stata superata.
 Ad esempio, supponiamo che il file tluoghi.txt contenga i seguenti dati:

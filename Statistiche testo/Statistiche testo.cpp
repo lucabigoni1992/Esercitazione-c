@@ -1,6 +1,6 @@
 /*
-Si scriva un programma in C che acquisisca da tastiera un testo libero, composto da più righe (max 1000) di un numero di caratteri non superiore a 100 ciascuna. L’inserimento termina quando l’utente inserirà una riga uguale a FINE.
-Al termine dell’acquisizione del testo, il programma dovrà stampare le seguenti statistiche:
+Si scriva un programma in C che acquisisca da tastiera un testo libero, composto da più righe (max 1000) di un numero di caratteri non superiore a 100 ciascuna. L'inserimento termina quando l'utente inserirà una riga uguale a FINE.
+Al termine dell'acquisizione del testo, il programma dovrà stampare le seguenti statistiche:
 1.	il numero totale di righe inserite  ;
 2.	il numero totale di caratteri inseriti;
 3.	il numero totale di caratteri alfanumerici inseriti;
@@ -39,10 +39,10 @@ int main(void)
 		}
 
 	} while (end == 0 && N < MAX);
-	printf("L’utente ha inserito %d righe\n", N);
+	printf("L'utente ha inserito %d righe\n", N);
 	ncar = 0;
 	for (i = 0; i < N; i++) ncar = ncar + strlen(testo[i]);
-	printf("L’utente ha inserito %d caratteri\n", ncar);
+	printf("L'utente ha inserito %d caratteri\n", ncar);
 
 	nalfa = 0; for (i = 0; i < N; i++)
 	{
@@ -52,7 +52,7 @@ int main(void)
 		}
 	}
 
-	printf("L’utente ha inserito %d caratterialfanumerici\n", nalfa);
+	printf("L'utente ha inserito %d caratterialfanumerici\n", nalfa);
 
 	npar = 0; for (i = 0; i < N; i++)
 	{
@@ -66,6 +66,6 @@ int main(void)
 
 		}
 	}
-	printf("L’utente ha inserito %d parole\n", npar); 
+	printf("L'utente ha inserito %d parole\n", npar); 
 	return(0);
 }

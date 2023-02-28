@@ -43,7 +43,7 @@ int main(void)
 			max = tot[i]; posmax = i;
 		}
 	}
-	printf("Il vincitore e’ il candidato numero %d\n", posmax + 1);
+	printf("Il vincitore e' il candidato numero %d\n", posmax + 1);
 	min = totg[0]; posmin = 0; for (i = 1; i < N; i++)
 	{
 		if (totg[i] < min)
@@ -51,6 +51,6 @@ int main(void)
 			min = totg[i]; posmin = i;
 		}
 	}
-	printf("Ilgiudice piu’ severo e’ il numero %d\n", posmin + 1);
+	printf("Ilgiudice piu' severo e' il numero %d\n", posmin + 1);
 	return(0);
 }

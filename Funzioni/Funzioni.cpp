@@ -28,7 +28,7 @@ int main(int argc,char *argv[])
 /*qua scriviamo il codice della funzione*/
 
 void StampaMoltiplicazione(int Add1, int Add2, int ris) {
-	printf("la moltiplicazione(fz) di %d * %d = %d", Add1, Add2, ris);
+	printf("la moltiplicazione di %d * %d = %d", Add1, Add2, ris);
 }
 
 int Moltiplicazione(int Add1, int Add2) {

@@ -7,15 +7,15 @@ dove:
 •	codice è il codice del corso (max 10 caratteri, senza spazi);
 •	data è la data della lezione, rappresentata come numero intero tra 1 e 365;
 •	numstudenti è il numero di studenti presenti, rappresentato come numero intero positivo.
-Il programma viene richiamato con due argomenti sulla linea di comando: il primo argomento indica il codice del corso interessato, mentre il secondo indica l’operazione da eseguire. L’operazione può essere I per “inserimento” oppure S per “statistiche.” In particolare:
-•	nel caso di inserimento di una nuova lezione (relativa al corso indicato sulla linea di comando), il programma chiederà all’utente le informazioni necessarie (data e numero di studenti) ed aggiornerà il file di lavoro aggiungendovi una riga. Compiuta tale elaborazione, il programma termina.
+Il programma viene richiamato con due argomenti sulla linea di comando: il primo argomento indica il codice del corso interessato, mentre il secondo indica l'operazione da eseguire. L'operazione può essere I per “inserimento” oppure S per “statistiche.” In particolare:
+•	nel caso di inserimento di una nuova lezione (relativa al corso indicato sulla linea di comando), il programma chiederà all'utente le informazioni necessarie (data e numero di studenti) ed aggiornerà il file di lavoro aggiungendovi una riga. Compiuta tale elaborazione, il programma termina.
 •	stampa delle statistiche di un corso. In tal caso il programma calcola e stampa, per il corso indicato sulla linea di comando, le seguenti quantità: data della lezione con il maggior numero di studenti, data della lezione con il minor numero di studenti, numero medio di studenti presenti alle lezioni. In seguito il programma termina.
 Ad esempio, supponendo che il programma sia denominato registro, e che il file lezioni.txt sia inizialmente vuoto, una possibile interazione con il programma è la seguente (si noti che c:> è il prompt del sistema operativo):
 c:> registro 06AZNDI I
 Data: 101 Studenti: 40 c:> registro 04KKZWE I
 Data: 104 Studenti: 99 c:> registro 06AZNDI I
 Data: 98 Studenti: 45 c:> registro 06AZNDI S
-Il minimo di studenti si e’ raggiunto in data 101 Ilmassimo di studenti si e’ raggiunto in data 98
+Il minimo di studenti si e' raggiunto in data 101 Ilmassimo di studenti si e' raggiunto in data 98
 
 La media di studenti vale 42.5
 
@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 		printf("ERRORE:comando %s non riconosciuto\n", argv[2]); exit(1);
 
 	}
-	/* se il comando è ’I’ */ if (strcmp(argv[2], "I") == 0)
+	/* se il comando è 'I' */ if (strcmp(argv[2], "I") == 0)
 	{
 		/* acquisisci i dati da tastiera */
 		printf("Data:"); 
@@ -90,7 +90,7 @@ int main(int argc, char* argv[])
 
 	}
 	else if (strcmp(argv[2], "S") == 0) {
-		/* se il comando è ’S’ */
+		/* se il comando è 'S' */
 		nLezioni = 0;
 		totStud = 0;
 		minStud = 5000;
@@ -134,8 +134,8 @@ int main(int argc, char* argv[])
 		/* stampa statistiche */
 		if (nLezioni >= 1)
 		{
-			printf("Il minimo di studenti si e’ raggiunto in data %d\n", dataMinStud);
-			printf("Il massimo di studenti si e’ raggiunto in data %d\n", dataMaxStud);
+			printf("Il minimo di studenti si e' raggiunto in data %d\n", dataMinStud);
+			printf("Il massimo di studenti si e' raggiunto in data %d\n", dataMaxStud);
 			printf("La media del numero di studenti vale %.1f\n",
 				(double)totStud / (double)nLezioni);
 		}

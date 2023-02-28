@@ -1,9 +1,9 @@
 /*
 Realizzare un programma in linguaggio C per registrare le cartoline scambiate tra un gruppo di amici (massimo 20 amici).
-L’elenco delle cartoline è memorizzato in un file di testo, composto da un numero imprecisato di linee, ciascuna delle quali contiene tre elementi: il nome del mittente, il nome del destinatario ed il nome della località da cui la cartolina è stata inviata. I nomi degli amici e delle località sono da intendersi privi di spazi e lunghi al massimo 30 caratteri ciascuno.
+L'elenco delle cartoline è memorizzato in un file di testo, composto da un numero imprecisato di linee, ciascuna delle quali contiene tre elementi: il nome del mittente, il nome del destinatario ed il nome della località da cui la cartolina è stata inviata. I nomi degli amici e delle località sono da intendersi privi di spazi e lunghi al massimo 30 caratteri ciascuno.
 Il programma riceve come primo parametro sulla linea di comando il nome del file di testo, mentre il secondo parametro può essere la stringa new oppure la stringa find.
-Il comando new richiede ulteriori tre parametri sulla linea di comando, corrispondenti ai nomi degli amici e della località, e deve aggiungere tali informazioni in coda al file. Il programma deve segnalare con un messaggio errore l’eventuale tentativo di re-introdurre una cartolina identica ad una già esistente.
-Il comando find è invece seguito da un solo ulteriore parametro sulla linea di comando, corrispondente al nome di un amico. In questo caso il programma deve stampare l’elenco degli amici che hanno spedito cartoline all’amico specificato e le località corrispondenti.
+Il comando new richiede ulteriori tre parametri sulla linea di comando, corrispondenti ai nomi degli amici e della località, e deve aggiungere tali informazioni in coda al file. Il programma deve segnalare con un messaggio errore l'eventuale tentativo di re-introdurre una cartolina identica ad una già esistente.
+Il comando find è invece seguito da un solo ulteriore parametro sulla linea di comando, corrispondente al nome di un amico. In questo caso il programma deve stampare l'elenco degli amici che hanno spedito cartoline all'amico specificato e le località corrispondenti.
 Esempio
 Supponiamo che il programma si chiami cartoline e che il file car.txt contenga i seguenti dati:
 
@@ -39,8 +39,8 @@ int main(int argc, char* argv[])
 	char mitt[LUN + 1], dest[LUN + 1], luogo[LUN + 1]; int r, esiste;
 	/* Controlla i parametri sulla linea di comando */ 
 	if (argc == 4 && strcmp(argv[2], "find") == 0) {
-		/* comando ’find’ */
-		/* cerca all’interno del file se esiste un amico ’destinatario’
+		/* comando 'find' */
+		/* cerca all'interno del file se esiste un amico 'destinatario'
 		25	uguale ad argv[3] */
 		f = fopen(argv[1], "r"); if (f == NULL)
 		{
@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 			r = sscanf(riga, "%s %s %s", mitt, dest, luogo);
 			if (r == 3)
 			{
-				/* controlla se l’amico è quello giusto */ 
+				/* controlla se l'amico è quello giusto */ 
 				if (strcmp(dest, argv[3]) == 0)
 				{
 					printf("	%s da %s\n", mitt, luogo);
@@ -69,7 +69,7 @@ int main(int argc, char* argv[])
 	}
 	else if (argc == 6 && strcmp(argv[2], "new") == 0)
 	{
-		/* comando ’new’ */
+		/* comando 'new' */
 		/* controlla se esiste già una cartolina con mittente == argv[3]
 		60	destinatario == argv[4]
 		luogo == argv[5]

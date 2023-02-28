@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Registro d’esame.cpp">
+    <ClCompile Include="Registro d'esame.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

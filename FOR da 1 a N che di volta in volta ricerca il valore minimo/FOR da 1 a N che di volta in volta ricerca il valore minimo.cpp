@@ -8,7 +8,7 @@ min – La variabile intera che contiene il valore minimo.
 
 i – La variabile contatore per il ciclo for. Ovviamente il contatore deve essere un intero.
 
-pos – La variabile intera che indica il numero d’ordine del valore minimo.
+pos – La variabile intera che indica il numero d'ordine del valore minimo.
 
 Dopo avere dichiarato le variabili occorre prendere in input N e controllare che sia maggiore di zero.
 

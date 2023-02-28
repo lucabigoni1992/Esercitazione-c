@@ -23,7 +23,7 @@ int main(void)
 	printf("Inserisci una parola di al massimo %d caratteri:", MAXDIM);
 	scanf("%s", parola);
 	/* VISUALIZZA LA STRINGA DI CARATTERI INSERITA */
-	printf("La parola inserita e’: %s \n", parola);
+	printf("La parola inserita e': %s \n", parola);
 	/* LEGGI IL NUMERO DI CARATTERI DELLA STRINGA */
 	numcaratteri = strlen(parola);
 	printf("La parola contiene %d caratteri\n", numcaratteri);
@@ -32,15 +32,15 @@ int main(void)
 		parola[i] = tolower(parola[i]);
 
 	/* VISUALIZZA LA STRINGA DI CARATTERI DOPO LA CONVERSIONE */
-	printf("La parola inseritascritta solo con caratteri in minuscolo e’: %s\n", parola);
-	/* VERIFICA SE LA STRINGA "parola" E’ PALINDROMA */
-/* INIZIALIZZA IL FLAG "palindroma". IL FLAG ASSUME I VALORI -- "palindroma" E’ UGUALE A 1 SE "parola" E’ PALINDROMA
--- "palindroma" E’ UGUALE A 0 SE "parola" NON E’ PALINDROMA
+	printf("La parola inseritascritta solo con caratteri in minuscolo e': %s\n", parola);
+	/* VERIFICA SE LA STRINGA "parola" E' PALINDROMA */
+/* INIZIALIZZA IL FLAG "palindroma". IL FLAG ASSUME I VALORI -- "palindroma" E' UGUALE A 1 SE "parola" E' PALINDROMA
+-- "palindroma" E' UGUALE A 0 SE "parola" NON E' PALINDROMA
 45	*/
 	palindroma = 1;
-	/* IL CICLO FOR SCANDISCE LA STRINGA DI CARATTERI "parola" E VERIFICA SE E’ PALINDROMA L’INDICE "i" SCORRE LA PRIMA META’ DI "parola". L’INDICE 50	"j" SCORRE LA SECONDA META’ DI "parola" PARTENDO DALL’ULTIMO CARATTERE.
+	/* IL CICLO FOR SCANDISCE LA STRINGA DI CARATTERI "parola" E VERIFICA SE E' PALINDROMA L'INDICE "i" SCORRE LA PRIMA META' DI "parola". L'INDICE 50	"j" SCORRE LA SECONDA META' DI "parola" PARTENDO DALL'ULTIMO CARATTERE.
 	LA RICERCA TERMINA QUANDO SI TROVA SI VERIFICA CHE LA STRINGA "parola"
-	NON E’ PALINDROMA O QUANDO SONO STATI CONSIDERATI TUTTI I CARATTERI DI "parola" */
+	NON E' PALINDROMA O QUANDO SONO STATI CONSIDERATI TUTTI I CARATTERI DI "parola" */
 	for (i = 0, j = numcaratteri - 1;
 		i < numcaratteri / 2 && palindroma == 1; i++, j--)
 	{
@@ -48,8 +48,8 @@ int main(void)
 			palindroma = 0;
 	}
 	/* STAMPA DEL RISULTATO */ if (palindroma == 1)
-		printf("La parola e’ palindroma\n");
-	else printf("La parola non e’ palindroma\n");
+		printf("La parola e' palindroma\n");
+	else printf("La parola non e' palindroma\n");
 	return(0);
 
 }

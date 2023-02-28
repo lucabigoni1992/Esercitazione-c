@@ -10,6 +10,7 @@ int main()
     int nDati;
     printf("Inserire N°Valori che si vuole inserire");
     scanf("%d", &nDati);
+    //controllo <=99
     getchar();//getchar serve per acquisire il laore dell'invio dell'utente dell' nDati
     for (int i = 0; i < nDati; i++) {
         printf("Inserire solo caratteri minuscoli [a-z]");

@@ -1,9 +1,9 @@
 ﻿/*
 Si desidera sviluppare un programma in linguaggio C per gestire in modo informatico un registro di esame.
-Il registro è memorizzato in un file di testo con nome registro.txt e contiene i dati di N studenti, ove N è il numero intero scritto nella prima riga del file. Dopo questa prima riga, ogni riga successiva contiene il dato relativo ad un singolo studente, indicando il numero di matricola dello studente (numero intero compreso 1 e 999999) ed il voto conseguito (numero intero con valore tra 18 e 30, oppure zero per indicare che l’esame non è ancora stato sostenuto).
+Il registro è memorizzato in un file di testo con nome registro.txt e contiene i dati di N studenti, ove N è il numero intero scritto nella prima riga del file. Dopo questa prima riga, ogni riga successiva contiene il dato relativo ad un singolo studente, indicando il numero di matricola dello studente (numero intero compreso 1 e 999999) ed il voto conseguito (numero intero con valore tra 18 e 30, oppure zero per indicare che l'esame non è ancora stato sostenuto).
 Il programma può essere attivato in due modi diversi.
 Se viene attivato passando come primo parametro sulla linea di comando la parola stat allora deve fornire le seguenti statistiche: numero di studenti promossi (e relativa percentuale sul totale, espressa con una cifra dopo la virgola) e voto medio degli studenti promossi (indicato con una sola cifra dopo la virgola).
-Il programma può anche essere attivato passando come primo parametro la parola voto, come secondo parametro il numero di matricola di uno studente e come ultimo parametro il voto conseguito dallo studente. In questo caso il programma deve inserire nel file il voto dello studente, segnalando però errore nel caso che lo studente non sia iscritto all’esame (ossia il suo numero di matricola non compaia nel file) oppure abbia già superato l’esame (ossia voto diverso da zero nella riga contenente la sua matricola).
+Il programma può anche essere attivato passando come primo parametro la parola voto, come secondo parametro il numero di matricola di uno studente e come ultimo parametro il voto conseguito dallo studente. In questo caso il programma deve inserire nel file il voto dello studente, segnalando però errore nel caso che lo studente non sia iscritto all'esame (ossia il suo numero di matricola non compaia nel file) oppure abbia già superato l'esame (ossia voto diverso da zero nella riga contenente la sua matricola).
 Ad esempio se il file registro.txt contenesse i seguenti dati:
 3
 33467 30
@@ -13,7 +13,7 @@ Ad esempio se il file registro.txt contenesse i seguenti dati:
 promossi = 2 (66.7 %) voto medio = 24.0
 Se invece il programma venisse attivato nel seguente modo:
 esame voto 24356 24
-allora dopo l’esecuzione del programma il file registro.txt dovrebbe contenere i seguenti dati:
+allora dopo l'esecuzione del programma il file registro.txt dovrebbe contenere i seguenti dati:
 3
 33467 30
 24356 24
@@ -36,7 +36,7 @@ int main(int argc, char* argv[])
 	FILE* f;
 	char riga[LUN + 1]; char comando[LUN + 1];
 	int r, r1, r2, mat, vot, c, somma, i, trovato, pos;
-	/* 1) Leggi il contenuto del file all’interno dei vettori */ f = fopen(nomefile, "r"); if (f == NULL)
+	/* 1) Leggi il contenuto del file all'interno dei vettori */ f = fopen(nomefile, "r"); if (f == NULL)
 	{
 		printf("ERRORE:impossibile aprire il file %s\n", nomefile);
 
@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 		printf("ERRORE di coerenza nel file\n");
 		exit(1);
 	}
-	/* 2) Acquisisci il comando dell’utente */
+	/* 2) Acquisisci il comando dell'utente */
 	if (!(
 		(argc == 2 && strcmp(argv[1], "stat") == 0) ||
 		(argc == 4 && strcmp(argv[1], "voto") == 0)
@@ -104,7 +104,7 @@ int main(int argc, char* argv[])
 	else if (strcmp(comando, "voto") == 0)
 	{
 		/* 2b) "voto nmatricola valorevoto" */
-		/* ricerca ’mat’ all’interno del vettore matricola[] */
+		/* ricerca 'mat' all'interno del vettore matricola[] */
 			/* output: trovato=1/0, pos */
 		trovato = 0; for (i = 0; i < N && trovato == 0; i++)
 		{
@@ -114,9 +114,9 @@ int main(int argc, char* argv[])
 				trovato = 1; pos = i;
 			}
 		}
-		/* controlla se e’ valido */ if (trovato == 1 && voto[pos] == 0)
+		/* controlla se e' valido */ if (trovato == 1 && voto[pos] == 0)
 		{
-			/* modifica il voto all’interno del vettore */
+			/* modifica il voto all'interno del vettore */
 			voto[pos] = vot;
 			/* salva i vettori su file */
 			f = fopen(nomefile, "w"); if (f == NULL)
@@ -131,7 +131,7 @@ int main(int argc, char* argv[])
 		}
 		else {
 			printf("Impossibile registrare il voto\n"); if (trovato == 0) printf("Lo studente non esiste\n");
-			else printf("L’esame e’ gia’ stato superato\n");
+			else printf("L'esame e' gia' stato superato\n");
 
 		}
 	}

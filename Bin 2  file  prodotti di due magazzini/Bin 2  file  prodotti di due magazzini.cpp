@@ -117,7 +117,7 @@ list ordins(element_type el, list root) {
 	return root;
 }
 element_type member(element_type el, list l)
-/* ricerca - iterativa       si suppone che l’elemento esista      e venga restituito dalla funzione  */
+/* ricerca - iterativa       si suppone che l'elemento esista      e venga restituito dalla funzione  */
 {
 	while (!(l == NULL)) {
 		if (isequal(el, l->value))                        return(l->value);

@@ -15,14 +15,14 @@ int main() {
     char vet[5];
     int posizione = 0;
     for (int i = 0; i < 5; i++) {
-        printf("Inserire un carattere\n");
+        printf("Inserire il carattere n %d carattere\n",i);
         scanf("%c", &vet[i]);
         getchar();
     }
     printf("Inserire una posizione\n");
     scanf("%d", &posizione);
     for (int i = 0; i < posizione; i++) {
-        printf("%c\n", vet[i]);
+        printf("%c", vet[i]);
     }
 
 }

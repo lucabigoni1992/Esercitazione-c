@@ -14,7 +14,7 @@ Il programma accede a due file:
 •	quantità è un numero reale che identifica la quantità presente di tale ingrediente nel frigorifero
 •	ogni ingrediente è presente una sola volta in questo file
 •	non è noto a priori il numero di righe del file, né è specificato alcun ordinamento noto per il file.
-Il programma riceve come argomenti sulla linea di comando il nome del file contenente le disponibilità del frigorifero ed il nome di una ricetta, e deve fornire in output l’elenco degli ingredienti della ricetta (con l’indicazione se ciascuno di essi è disponibile o meno) e la conclusione finale se la ricetta scelta può essere preparata.
+Il programma riceve come argomenti sulla linea di comando il nome del file contenente le disponibilità del frigorifero ed il nome di una ricetta, e deve fornire in output l'elenco degli ingredienti della ricetta (con l'indicazione se ciascuno di essi è disponibile o meno) e la conclusione finale se la ricetta scelta può essere preparata.
 Ad esempio se i file Germana.txt e frigo.txt contenessero i seguenti dati:
 (Germana.txt)	(frigo.txt)
 padellino uovo 1	uovo 1
@@ -25,7 +25,7 @@ allora dovrebbe produrre il seguente risultato:
 Ingredienti:
 -	olio: OK
 -	uovo: OK
--	parmigiano: richiesto 0.2, disponibile 0.1 Ricetta ’frittata’ impossibile
+-	parmigiano: richiesto 0.2, disponibile 0.1 Ricetta 'frittata' impossibile
 
 */
 #define _CRT_SECURE_NO_DEPRECATE
@@ -115,7 +115,7 @@ DALLA RICETTA argv[2] */
 	}
 	fclose(f);
 
-	/* 2A: sulla base del vettore ok[] decido se la ricetta e’ fattibile */ possibile = 1; for (i = 0; i < Ningr; i++)
+	/* 2A: sulla base del vettore ok[] decido se la ricetta e' fattibile */ possibile = 1; for (i = 0; i < Ningr; i++)
 		if (ok[i] == 0) possibile = 0;
 	if (possibile == 1) printf("RicettaPOSSIBILE!!!\n");
 	else

@@ -5,7 +5,7 @@ Si scriva una funzione in C,
 denominata fattoriale, che calcoli il fattoriale di un numero intero dato.
 Per via della velocità di crescita della funzione, il valore restituito deve essere codificato in un double,
 nonostante sia in effetti un valore intero. */
-//5=5*4*3*2*1*0
+//5=5*4*3*2
 #define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h> 
 #include <stdlib.h>
@@ -17,7 +17,7 @@ int fattoriale(int n)
 		return (-1); /* errore! */
 	if (n == 0 || n == 1)
 		return 1;
-	val = 1.0;
+	val = 1;
 	for (int i = 2; i <= n; i++) 
 		val = val * i;
 	return val;

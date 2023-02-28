@@ -2,13 +2,13 @@
 Si realizzi un programma in linguaggio C in grado di gestire una rubrica di nomi e numeri telefonici.
 La rubrica deve contenere fino a 100 voci diverse.
 Ciascuna voce è composta da un nome (max 40 caratteri) e da un numero di telefono (max 20 caratteri).
-Il programma deve fornire all’utente un menù di scelta, con le seguenti voci:
+Il programma deve fornire all'utente un menù di scelta, con le seguenti voci:
 1)	Aggiungi nuova voce in rubrica
 2)	Ricerca esatta per nome
 3)	Ricerca approssimata per nome
 4)	Stampa completa rubrica
 0) Esci dal programma
-Una volta che l’utente ha scelto l’operazione desiderata (1-4), il programma acquisirà i dati necessari dall’utente ed eseguirà il comando. Nota: nella rubrica non possono esistere due voci con lo stesso nome.
+Una volta che l'utente ha scelto l'operazione desiderata (1-4), il programma acquisirà i dati necessari dall'utente ed eseguirà il comando. Nota: nella rubrica non possono esistere due voci con lo stesso nome.
 
 */#define _CRT_SECURE_NO_DEPRECATE
 #include <stdio.h>
@@ -19,7 +19,7 @@ int main(void)
 	const int MAX = 100; /* numero max di voci */ const int LUNN = 40; /* lunghezza del nome */ const int LUNT = 20; /* lunghezza n. telefono */
 	char nome[MAX][LUNN + 1]; char tel[MAX][LUNT + 1];
 	int N; /* numero di voci memorizzate */
-	int comando; /* comando dell’utente 0-4 */
+	int comando; /* comando dell'utente 0-4 */
 	char riga[200]; char sn[LUNN + 1];
 	char st[LUNT + 1];
 	int i, duplicato, trovato, pos;
@@ -74,11 +74,11 @@ int main(void)
 			}
 			if (trovato == 1)
 			{
-				printf("Iltelefono di %s e’: %s\n", sn, tel[pos]);
+				printf("Iltelefono di %s e': %s\n", sn, tel[pos]);
 			}
 			else
 			{
-				printf("Nessun %s e’ presente in rubrica\n", sn);
+				printf("Nessun %s e' presente in rubrica\n", sn);
 			}
 			break;
 		case 3: /* ricerca approssimata */ printf("Inserisci una parte del nome da ricercare:"); gets_s(sn);

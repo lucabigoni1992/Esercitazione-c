@@ -18,7 +18,8 @@ int main(void)
 	int i;	/* indice dei cicli */
 	int numero;	/* numero da ricercare nella sequenza */
 	int trovato;	/* flag per indicare se la sequenza contiene il numero inserito */
-	/* LEGGI LE DIMENSIONI DEL VETTORE */ do {
+	/* LEGGI LE DIMENSIONI DEL VETTORE */
+	do {
 		printf("Quanti numeri saranno inseriti? ");
 		/* Soluzione proposta esercizio "Ricerca di un elemento in un vettore" */
 		scanf("%d", &N);
@@ -38,11 +39,12 @@ int main(void)
 	}
 	printf("\n");
 	/* STAMPA IL VETTORE DI INTERI */
-	printf("Lasequenza inserita e' la seguente\n");
+	printf("La sequenza inserita e' la seguente:\n");
 	for (i = 0; i < N; i++)
 		printf("Elemento %d: %d\n", i + 1, vet[i]);
 	printf("\n");
-	/* LEGGI IL NUMERO DA RICERCARE NELLA SEQUENZA */ printf("Inserisci il numero da cercare nella sequenza:");
+	/* LEGGI IL NUMERO DA RICERCARE NELLA SEQUENZA */ 
+	printf("Inserisci il numero da cercare nella sequenza:");
 	scanf("%d", &numero);
 	/* VERIFICA SE LA SEQUENZA DI NUMERI CONTIENE IL NUMERO INSERITO */
 	/* INIZIALIZZA IL FLAG "trovato". IL FLAG ASSUME I VALORI
@@ -54,8 +56,8 @@ int main(void)
 	for (i = 0; i < N && trovato == 0; i++)
 	{
 		if (vet[i] == numero)
-			/* SE "vet" CONTIENE IL VALORE IN "numero", AGGIORNA IL FLAG "trovato" */ trovato = 1;
-
+			/* SE "vet" CONTIENE IL VALORE IN "numero", AGGIORNA IL FLAG "trovato" */
+			trovato = 1;
 	}
 	/* STAMPA IL RISULTATO */
 	if (trovato == 0)

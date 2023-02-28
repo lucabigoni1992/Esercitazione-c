@@ -1,6 +1,6 @@
 /*
 
- E’ dato un file di testo (SCHEDINA.TXT)
+ E' dato un file di testo (SCHEDINA.TXT)
 contenente un elenco di risultati per alcune partite di calcio.
 Su ciascuna linea sono memorizzati il nome della squadra ospitante (max 20 caratteri),
 il nome della squadra ospite (max 20 caratteri) e a seguire un valore (1, 0, o 2) per indicare rispettivamente

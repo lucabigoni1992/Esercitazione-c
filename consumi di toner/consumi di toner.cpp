@@ -1,11 +1,11 @@
 /*
-Si desidera analizzare la statistica dei consumi di toner di un’azienda per ottimizzare gli acquisti futuri.
-La quantità di cartucce di toner prelevate dal magazzino ogni giorno è riportata all’interno di un file di testo il cui nome è passato come primo parametro sulla riga di comando.
+Si desidera analizzare la statistica dei consumi di toner di un'azienda per ottimizzare gli acquisti futuri.
+La quantità di cartucce di toner prelevate dal magazzino ogni giorno è riportata all'interno di un file di testo il cui nome è passato come primo parametro sulla riga di comando.
 Il file contiene una riga per ogni giorno.Ogni riga contiene in sequenza :
 •	il nome del dipartimento che ha prelevato il toner(una stringa lunga al massimo 5 caratteri);
 •	un numero intero(valore minimo 1 e massimo 99) che indica la quantità di cartucce di toner prelevate in quel giorno da quel dipartimento.
 Non è noto il numero di righe presenti nel file.
-Il programma riceve inoltre come secondo argomento sulla linea di comando il nome di un dipartimento per il quale calcolare l’indicatore statistico dato come terzo argomento sulla linea di comando secondo la seguente codifica : • - min indica che si desidera il valore minimo;
+Il programma riceve inoltre come secondo argomento sulla linea di comando il nome di un dipartimento per il quale calcolare l'indicatore statistico dato come terzo argomento sulla linea di comando secondo la seguente codifica : • - min indica che si desidera il valore minimo;
 • - max indica che si desidera il valore massimo;
 • - med indica che si desidera il valore medio(da stamparsi in output con un cifra dopo la virgola).
 Ad esempio se il file TONER.TXT contenesse i seguenti dati :

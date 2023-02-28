@@ -1,9 +1,9 @@
 /*
-Un’azienda ha dotato i propri dipendenti di un sensore wireless che emette un codice numerico ogni volta che un dipendente attraversa la porta d’ingresso/uscita dell’azienda o ne transita nelle vicinanze. L’azienda ha meno di 1000 dipendenti. Ad ogni attraversamento, il sensore registra ora e minuti del passaggio, insieme al codice del dipendente (un codice alfanumerico di max 10 caratteri).
-Si desidera sviluppare un programma in linguaggio C per il calcolo delle ore lavorative dei dipendenti dell’azienda. Il programma riceve sulla linea di comando un primo parametro, che rappresenta il nome del file contenente gli attraversamenti, ed un secondo parametro (opzionale), che rappresenta il codice numerico di un dipendente.
+Un'azienda ha dotato i propri dipendenti di un sensore wireless che emette un codice numerico ogni volta che un dipendente attraversa la porta d'ingresso/uscita dell'azienda o ne transita nelle vicinanze. L'azienda ha meno di 1000 dipendenti. Ad ogni attraversamento, il sensore registra ora e minuti del passaggio, insieme al codice del dipendente (un codice alfanumerico di max 10 caratteri).
+Si desidera sviluppare un programma in linguaggio C per il calcolo delle ore lavorative dei dipendenti dell'azienda. Il programma riceve sulla linea di comando un primo parametro, che rappresenta il nome del file contenente gli attraversamenti, ed un secondo parametro (opzionale), che rappresenta il codice numerico di un dipendente.
 Il file è relativo ai passaggi di una sola giornata, ed è composto da una serie di righe, ciascuna delle quali corrisponde ad un passaggio, ed è composta da tre campi:
 ora minuti codice_dipendente
-Se il programma viene invocato con un due parametri sulla linea di comando (vi è il codice del dipendente), allora dovrà stampare, per il dipendente specificato, il numero totale di minuti lavorati. Per determinare il numero di minuti lavorati occorre confrontare l’orario del primo passaggio con l’orario dell’ultimo passaggio per quel dipendente.
+Se il programma viene invocato con un due parametri sulla linea di comando (vi è il codice del dipendente), allora dovrà stampare, per il dipendente specificato, il numero totale di minuti lavorati. Per determinare il numero di minuti lavorati occorre confrontare l'orario del primo passaggio con l'orario dell'ultimo passaggio per quel dipendente.
 Se invece il programma viene invocato con un solo parametro sulla linea di comando (il codice del dipendente è assente), allora il programma dovrà stampare il numero totale di dipendenti diversi che hanno lavorato in quel giorno (ossia che sono passati almeno una volta dalla porta).
 Ad esempio, dato il seguente file di testo passaggi.txt:
 8 30 abc222
@@ -59,7 +59,7 @@ argv[1] -> nome del file argv[2] -> matricola dipendente (opzionale)
 			}
 			else
 			{
-				/* Cerca se ’matricola’ è già presente */ presente = 0; for (i = 0; i < N && presente == 0; i++)
+				/* Cerca se 'matricola' è già presente */ presente = 0; for (i = 0; i < N && presente == 0; i++)
 					if (strcmp(matricola, nomi[i]) == 0)
 						presente = 1;
 				/* Se è nuovo, aggiungilo */ if (presente == 0)
