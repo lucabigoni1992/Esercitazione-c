@@ -3,7 +3,6 @@
 #include<string.h>
 #define SSIZE 20
 #define INPUTSIZE 10
-int min(int, int);
 int main(void)
 {
 	char* s0; char* s1;
@@ -23,6 +22,7 @@ int main(void)
 	printf("%p-%p||%s-%s\n", s0, s3, s0, s3);
 	/*Chee'lastessacosadi*/
 	printf("%d\n", &s3[2] == s3 + 2);
+	//qua
 	s0 = (char* )"prova";
 	s1 = (char*)"ciaociao";
 	printf("%p-%p\n", s0, s1);

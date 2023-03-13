@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_DEPRECATE
+
 #include<stdio.h>
 int ricercadicotomica(int a[], int n, int sx, int dx);
 int main() {

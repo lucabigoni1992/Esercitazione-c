@@ -10,11 +10,11 @@ int main()
 	int alfa = 5;
 	int beta = 13;
 
-	printf("alfa -> %d, beta -> %dn", alfa, beta);
+	printf("alfa -> %d, beta -> %d\n", alfa, beta);
 
 	swap(&alfa, &beta);
 
-	printf("alfa -> %d, beta -> %dn", alfa, beta);
+	printf("alfa -> %d, beta -> %d\n", alfa, beta);
 }
 
 void swap(int* apt, int* bpt)

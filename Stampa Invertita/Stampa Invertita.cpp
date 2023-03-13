@@ -2,6 +2,8 @@
 Scrivere un programma che prenda in input una stringa (lunga al pi`u 20) con getchar,
 la copi invertita in una variabile e stampi tale variabile.
 */
+#define _CRT_SECURE_NO_DEPRECATE
+
 #include<stdio.h>
 #define INPUT_SIZE 21
 int main() {

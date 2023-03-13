@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_DEPRECATE
+
 #include<stdio.h> 
 void dollarize(char arr[], int dim);
 int main() {

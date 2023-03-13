@@ -27,11 +27,12 @@ int main()
 	printf("Puntatore Val : %d  :valore di A : %d \n", *P, a);
 	*P = 5;//si modifica il contenuto puntato da p quindi si modifica a
 	printf("Puntatore Val : %d  :valore di A : %d \n", *P, a);
+
 	int b = 25;
 	int c = 0;
 	//*P => valore puntato da p
 	*P = b + c;//qua non si modifica ne P NE B NE C  ma si modifica la cella di memoria puntata da P,quindi A
-	printf("Puntatore Val : %d  :valore di A : %d - valore di A : %d  - valore di C : %d \n", *P, a, b, c);
+	printf("Puntatore Val : %d  :valore di A : %d - valore di b : %d  - valore di C : %d \n", *P, a, b, c);
 
 
 	 int x = 994589, y = 9999, *p;
@@ -39,9 +40,9 @@ int main()
 	p = &x;
 	*p = y;
 
-	printf("Puntatore Val : %d  :valore di A : %d  \n", *p, p);
-	printf("x Val : %d  :ind di x: %d  \n", x, &x);
-	printf("y Val : %d  :ind di y: %d  \n", y, &y);
+	printf("Puntatore Val : %d  :indirizzo : %p  \n", *p, p);
+	printf("x Val : %d  :ind di x: %p  \n", x, &x);
+	printf("y Val : %d  :ind di y: %p  \n", y, &y);
 	int* p2;
 	p2 = &x;
 	*p = 78;//p e p2 puntano entrambe a x, quindi se modifico una delle due modifico il valore puntato da entrambe

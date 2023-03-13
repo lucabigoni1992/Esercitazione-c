@@ -12,11 +12,12 @@ int main()
 	int* n1, * n2;
 	n1 = &vet[0];// n2 = vet;
 	n2 = &vet2[0];// n2 = vet2;
-
+	int i = 0;
 	do {
 		printf("la somma di %d + %d = %d \n", *n1, *n2, (*n1 + *n2));//si effettua la copiatura
 		n1++; n2++;//si scorrono i puntatori
-	} while (*n1 != '\0');
+		i++;
+	} while (i<10);
 
 }
 
